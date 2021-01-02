@@ -65,44 +65,85 @@ public class BoardManager : MonoBehaviour
         {
             for(int y =0; y < rows; y++)
             {
-                str = map[x,y];
-                if (str == "i")
-                    Instantiate (lakeBorder1, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "o")
-                    Instantiate (lakeBorder2, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "p")
-                    Instantiate (lakeBorder3, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "k")
-                    Instantiate (lakeBorder4, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "n")
-                    Instantiate (lakeBorder6, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "x")
-                    Instantiate (lakeBorder7, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "c")
-                    Instantiate (lakeBorder8, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "v")
-                    Instantiate (lakeBorder9, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "f")
-                    Instantiate (floor1, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "d")
-                    Instantiate (floor2, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "s")
-                    Instantiate (floor3, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "l")
-                    Instantiate (lake1, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "z")
-                    Instantiate (lake2, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "m")
-                    Instantiate (lake3, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "g")
-                    Instantiate (grass1, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "t")
-                    Instantiate (grass2, new Vector3 (x, y, 0f), Quaternion.identity);
-                else if (str == "y")
-                    Instantiate (grass3, new Vector3 (x, y, 0f), Quaternion.identity);
-                else
-                    str ="";
 
+                str = map[x,y];
+                switch (str)
+                {
+                    case "i":
+                        Instantiate(lakeBorder1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "o":
+                        Instantiate(lakeBorder2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "p":
+                        Instantiate(lakeBorder3, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "k":
+                        Instantiate(lakeBorder4, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "n":
+                        Instantiate(lakeBorder6, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "x":
+                        Instantiate(lakeBorder7, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "c":
+                        Instantiate(lakeBorder8, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "v":
+                        Instantiate(lakeBorder9, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "f":
+                        Instantiate(floor1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "d":
+                        Instantiate(floor2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "s":
+                        Instantiate(floor3, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "l":
+                        Instantiate(lake1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "z":
+                        Instantiate(lake2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "m":
+                        Instantiate(lake3, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "g":
+                        Instantiate(grass1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "t":
+                        Instantiate(grass2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "y":
+                        Instantiate(grass3, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    default:
+                        str = ""; break;
+                }
+//
+//                if (str == "i")
+//                    Instantiate (lakeBorder1, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "o")
+//                    Instantiate (lakeBorder2, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "p")
+//                    Instantiate (lakeBorder3, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "k")
+//                    Instantiate (lakeBorder4, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "n")
+//                    Instantiate (lakeBorder6, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "x")
+//                    Instantiate (lakeBorder7, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "c")
+//                    Instantiate (lakeBorder8, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "v")
+//                    Instantiate (lakeBorder9, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "f")
+//                    Instantiate (floor1, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "d")
+//                    Instantiate (floor2, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "s")
+//                    Instantiate (floor3, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "l")
+//                    Instantiate (lake1, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "z")
+//                    Instantiate (lake2, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "m")
+//                    Instantiate (lake3, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "g")
+//                    Instantiate (grass1, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "t")
+//                    Instantiate (grass2, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else if (str == "y")
+//                    Instantiate (grass3, new Vector3 (x, y, 0f), Quaternion.identity);
+//                else
+//                    str ="";
+//
             }
         }
 
