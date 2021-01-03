@@ -3,24 +3,7 @@ guid: 06c23589cd72cef4586d16abed486a69
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - floor1: {instanceID: 0}
-  - floor2: {instanceID: 0}
-  - floor3: {instanceID: 0}
-  - lake1: {instanceID: 0}
-  - lake2: {instanceID: 0}
-  - lake3: {instanceID: 0}
-  - grass1: {instanceID: 0}
-  - grass2: {instanceID: 0}
-  - grass3: {instanceID: 0}
-  - lakeBorder1: {instanceID: 0}
-  - lakeBorder2: {instanceID: 0}
-  - lakeBorder3: {instanceID: 0}
-  - lakeBorder4: {instanceID: 0}
-  - lakeBorder6: {instanceID: 0}
-  - lakeBorder7: {instanceID: 0}
-  - lakeBorder8: {instanceID: 0}
-  - lakeBorder9: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

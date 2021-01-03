@@ -13,18 +13,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-12-30T23:09:02.265+01:00
-  initializedAtString: 2020-12-30T23:09:02.213+01:00
-  localBranches: []
-  remoteBranches: []
-  remotes: []
+  lastUpdatedAtString: 2021-01-03T21:39:49.242+01:00
+  initializedAtString: 2021-01-03T21:39:48.786+01:00
+  localBranches:
+  - name: master
+    tracking: origin/master
+  remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/renukajain/DSAunity.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - master
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/renukajain/DSAunity.git
+      trackingBranch: master
   remoteConfigBranches:
-    keys: []
-    subKeys: []
-    subKeyValues: []
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - HEAD
+    subKeyValues:
+    - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/renukajain/DSAunity.git
+        trackingBranch: 
   configRemotes:
-    keys: []
-    values: []
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/renukajain/DSAunity.git
