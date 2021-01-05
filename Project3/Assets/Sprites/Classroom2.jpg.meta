@@ -127,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 38
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -148,7 +148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 38
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -169,7 +169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 38
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -189,8 +189,8 @@ TextureImporter:
       name: Classroom2_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 38
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -210,8 +210,8 @@ TextureImporter:
       name: Classroom2_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 22
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -231,8 +231,8 @@ TextureImporter:
       name: Classroom2_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 22
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -244,132 +244,6 @@ TextureImporter:
       bones: []
       spriteID: 6d612b480596b8810800000000000000
       internalID: 1768623073217615574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 22
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 842a6131c38556040800000000000000
-      internalID: 4640212006116696648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 22
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 358223f42816d33d0800000000000000
-      internalID: -3225314545825077165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 6
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b478fd4506ede1c0800000000000000
-      internalID: -4472665944451681098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_9
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 6
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ff9fd52af6a307b0800000000000000
-      internalID: -5259176346531160072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 6
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6133d7bc5b3e7a6f0800000000000000
-      internalID: -673319249326034154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Classroom2_11
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 6
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cef2b3e03079d4ee0800000000000000
-      internalID: -1275197080096526356
       vertices: []
       indices: 
       edges: []

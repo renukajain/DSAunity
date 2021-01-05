@@ -13,307 +13,114 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-05T18:09:13.841+01:00
-  initializedAtString: 2021-01-05T14:16:41.018+01:00
+  lastUpdatedAtString: 2021-01-05T21:14:44.780+01:00
+  initializedAtString: 2021-01-05T21:00:50.077+01:00
   entries:
-  - path: Project3\Assets\Prefab\BlackBoard1.prefab
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard1.prefab
-    projectPath: Assets\Prefab\BlackBoard1.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\BlackBoard1.prefab.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard1.prefab.meta
-    projectPath: Assets\Prefab\BlackBoard1.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\BlackBoard2.prefab
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard2.prefab
-    projectPath: Assets\Prefab\BlackBoard2.prefab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\BlackBoard2.prefab.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard2.prefab.meta
-    projectPath: Assets\Prefab\BlackBoard2.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Assets\Prefab\BlackBoard3.prefab
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard3.prefab
     projectPath: Assets\Prefab\BlackBoard3.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\BlackBoard3.prefab.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\BlackBoard3.prefab.meta
-    projectPath: Assets\Prefab\BlackBoard3.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Project3\Assets\Prefab\Table2Comp.prefab
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\Table2Comp.prefab
     projectPath: Assets\Prefab\Table2Comp.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\Table2Comp.prefab.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\Table2Comp.prefab.meta
-    projectPath: Assets\Prefab\Table2Comp.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Project3\Assets\Prefab\Wall2.prefab
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\Wall2.prefab
     projectPath: Assets\Prefab\Wall2.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Prefab\Wall2.prefab.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Prefab\Wall2.prefab.meta
-    projectPath: Assets\Prefab\Wall2.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Project3\Assets\Scripts\BoardManager.cs
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Scripts\BoardManager.cs
     projectPath: Assets\Scripts\BoardManager.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Project3\Assets\Sprites\32x32_map_tile v1.1_0.png
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\32x32_map_tile
-      v1.1_0.png
-    projectPath: Assets\Sprites\32x32_map_tile v1.1_0.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Project3\Assets\Sprites\baixa.jpg
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\baixa.jpg
-    projectPath: Assets\Sprites\baixa.jpg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Sprites\baixa.jpg.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\baixa.jpg.meta
-    projectPath: Assets\Sprites\baixa.jpg.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Sprites\Classroom.jpg
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\Classroom.jpg
-    projectPath: Assets\Sprites\Classroom.jpg
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Assets\Sprites\Classroom.jpg.meta
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\Classroom.jpg.meta
-    projectPath: Assets\Sprites\Classroom.jpg.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Assets\Sprites\Classroom2.jpg
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\Classroom2.jpg
     projectPath: Assets\Sprites\Classroom2.jpg
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Project3\Assets\Sprites\Classroom2.jpg.meta
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Assets\Sprites\Classroom2.jpg.meta
     projectPath: Assets\Sprites\Classroom2.jpg.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Project3\Library\ArtifactDB
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Project3\Library\Artifacts\02\0235926858642a2b10ac7beea49c1442
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\02\0235926858642a2b10ac7beea49c1442
-    projectPath: Library\Artifacts\02\0235926858642a2b10ac7beea49c1442
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\02\02a9f87b9d1900013f2fde4433a22821
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\02\02a9f87b9d1900013f2fde4433a22821
-    projectPath: Library\Artifacts\02\02a9f87b9d1900013f2fde4433a22821
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\03\03da4d458842ee78a02a0a739da9368b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\03\03da4d458842ee78a02a0a739da9368b
-    projectPath: Library\Artifacts\03\03da4d458842ee78a02a0a739da9368b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\06\06924881daff861b3f179ec96d1c1358
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\06\06924881daff861b3f179ec96d1c1358
-    projectPath: Library\Artifacts\06\06924881daff861b3f179ec96d1c1358
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\0d\0d12c447aa57f58b3da1d0bdf736bc26
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\0d\0d12c447aa57f58b3da1d0bdf736bc26
-    projectPath: Library\Artifacts\0d\0d12c447aa57f58b3da1d0bdf736bc26
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\0e\0eab0776e2bae86752f5fada90d2a86c
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\0e\0eab0776e2bae86752f5fada90d2a86c
-    projectPath: Library\Artifacts\0e\0eab0776e2bae86752f5fada90d2a86c
+  - path: Project3\Library\Artifacts\00\00fa492a20dd0aaec18719fec802a8d6
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\00\00fa492a20dd0aaec18719fec802a8d6
+    projectPath: Library\Artifacts\00\00fa492a20dd0aaec18719fec802a8d6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\10\1015e095a3d89f1d548473e1297956bd
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\10\1015e095a3d89f1d548473e1297956bd
-    projectPath: Library\Artifacts\10\1015e095a3d89f1d548473e1297956bd
+  - path: Project3\Library\Artifacts\12\12e3be2e3150eeceb6aea256241393a0
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\12\12e3be2e3150eeceb6aea256241393a0
+    projectPath: Library\Artifacts\12\12e3be2e3150eeceb6aea256241393a0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\12\1289e5deb176541ed3ccd991992517d3
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\12\1289e5deb176541ed3ccd991992517d3
-    projectPath: Library\Artifacts\12\1289e5deb176541ed3ccd991992517d3
+  - path: Project3\Library\Artifacts\18\1838c3f06aac9bb1dd4dd300d0c0f972
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\18\1838c3f06aac9bb1dd4dd300d0c0f972
+    projectPath: Library\Artifacts\18\1838c3f06aac9bb1dd4dd300d0c0f972
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\13\13950cbe59e1748d5eb9cff21166f2f3
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\13\13950cbe59e1748d5eb9cff21166f2f3
-    projectPath: Library\Artifacts\13\13950cbe59e1748d5eb9cff21166f2f3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\15\15b2a2026cee47991a40b72ceadf5ad6
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\15\15b2a2026cee47991a40b72ceadf5ad6
-    projectPath: Library\Artifacts\15\15b2a2026cee47991a40b72ceadf5ad6
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\16\1601ea03fb3a94144959c48e7451d65d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\16\1601ea03fb3a94144959c48e7451d65d
-    projectPath: Library\Artifacts\16\1601ea03fb3a94144959c48e7451d65d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\18\1854cb90adaabd887d87c01883a4e4e7
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\18\1854cb90adaabd887d87c01883a4e4e7
-    projectPath: Library\Artifacts\18\1854cb90adaabd887d87c01883a4e4e7
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Project3\Library\Artifacts\18\18bc4c5b7da2d9c5e4e52a19449ac761
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\18\18bc4c5b7da2d9c5e4e52a19449ac761
     projectPath: Library\Artifacts\18\18bc4c5b7da2d9c5e4e52a19449ac761
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Project3\Library\Artifacts\1a\1a9f4c7027ea28b9d5277dc8ac57198e
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\1a\1a9f4c7027ea28b9d5277dc8ac57198e
+    projectPath: Library\Artifacts\1a\1a9f4c7027ea28b9d5277dc8ac57198e
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\19\194df5e0766737a0f38a897471fd3029
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\19\194df5e0766737a0f38a897471fd3029
-    projectPath: Library\Artifacts\19\194df5e0766737a0f38a897471fd3029
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\20\20723c6a22d484ad4f8941ced82970e2
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\20\20723c6a22d484ad4f8941ced82970e2
-    projectPath: Library\Artifacts\20\20723c6a22d484ad4f8941ced82970e2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\21\219d9d1d1a213a804d705a0accaa3aba
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\21\219d9d1d1a213a804d705a0accaa3aba
-    projectPath: Library\Artifacts\21\219d9d1d1a213a804d705a0accaa3aba
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Project3\Library\Artifacts\24\2441009c9b80eb1db6f7b1b9d69f6f0c
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\24\2441009c9b80eb1db6f7b1b9d69f6f0c
     projectPath: Library\Artifacts\24\2441009c9b80eb1db6f7b1b9d69f6f0c
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\25\2543cf3b9f1a5a294029e5b166a62744
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\25\2543cf3b9f1a5a294029e5b166a62744
-    projectPath: Library\Artifacts\25\2543cf3b9f1a5a294029e5b166a62744
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\27\27b2aa8f854f59a0eaa857d1746d57e1
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\27\27b2aa8f854f59a0eaa857d1746d57e1
-    projectPath: Library\Artifacts\27\27b2aa8f854f59a0eaa857d1746d57e1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\2b\2b0ace2aec598f7c57245efd6f56e4e3
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\2b\2b0ace2aec598f7c57245efd6f56e4e3
-    projectPath: Library\Artifacts\2b\2b0ace2aec598f7c57245efd6f56e4e3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\2d\2d1dc77ca37d9ce5b2104580f737ec3e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\2d\2d1dc77ca37d9ce5b2104580f737ec3e
-    projectPath: Library\Artifacts\2d\2d1dc77ca37d9ce5b2104580f737ec3e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\2f\2fa111e6df659f7eb3f1e8a49f318ce0
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\2f\2fa111e6df659f7eb3f1e8a49f318ce0
-    projectPath: Library\Artifacts\2f\2fa111e6df659f7eb3f1e8a49f318ce0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Library\Artifacts\30\308b74f8dbb446bf51c031fd26528258
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\30\308b74f8dbb446bf51c031fd26528258
     projectPath: Library\Artifacts\30\308b74f8dbb446bf51c031fd26528258
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\31\31213c6b5a466f00c04e614bced26a07
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\31\31213c6b5a466f00c04e614bced26a07
-    projectPath: Library\Artifacts\31\31213c6b5a466f00c04e614bced26a07
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\34\343508cdda1cba2e1e89fe1da1098b42
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\34\343508cdda1cba2e1e89fe1da1098b42
-    projectPath: Library\Artifacts\34\343508cdda1cba2e1e89fe1da1098b42
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\35\35d92e94a5d8e1c85e588480526f218b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\35\35d92e94a5d8e1c85e588480526f218b
-    projectPath: Library\Artifacts\35\35d92e94a5d8e1c85e588480526f218b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\3a\3a9440c49d91c7b0ed10d7efc9f7eb2e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\3a\3a9440c49d91c7b0ed10d7efc9f7eb2e
-    projectPath: Library\Artifacts\3a\3a9440c49d91c7b0ed10d7efc9f7eb2e
+  - path: Project3\Library\Artifacts\32\324bfff366faca4af79dc13850712afe
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\32\324bfff366faca4af79dc13850712afe
+    projectPath: Library\Artifacts\32\324bfff366faca4af79dc13850712afe
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\3c\3cece55ee6f22a5453f988fa9fd5399a
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\3c\3cece55ee6f22a5453f988fa9fd5399a
-    projectPath: Library\Artifacts\3c\3cece55ee6f22a5453f988fa9fd5399a
+  - path: Project3\Library\Artifacts\32\32eeca254b31c02de8db0aa7671e8a7c
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\32\32eeca254b31c02de8db0aa7671e8a7c
+    projectPath: Library\Artifacts\32\32eeca254b31c02de8db0aa7671e8a7c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Project3\Library\Artifacts\36\360f7eb74d27ffab59b089ce3e7f2b5d
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\36\360f7eb74d27ffab59b089ce3e7f2b5d
+    projectPath: Library\Artifacts\36\360f7eb74d27ffab59b089ce3e7f2b5d
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\3d\3d1180e3df6682a9fec149da96b77d42
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\3d\3d1180e3df6682a9fec149da96b77d42
-    projectPath: Library\Artifacts\3d\3d1180e3df6682a9fec149da96b77d42
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\3d\3deb4a01960ebb1cc21cd498073db44b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\3d\3deb4a01960ebb1cc21cd498073db44b
-    projectPath: Library\Artifacts\3d\3deb4a01960ebb1cc21cd498073db44b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\42\42143cb9fce2f26f07296ef931a1ab99
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\42\42143cb9fce2f26f07296ef931a1ab99
-    projectPath: Library\Artifacts\42\42143cb9fce2f26f07296ef931a1ab99
+  - path: Project3\Library\Artifacts\3a\3a8cb39bb1b7aa0d9eba457c239664a3
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\3a\3a8cb39bb1b7aa0d9eba457c239664a3
+    projectPath: Library\Artifacts\3a\3a8cb39bb1b7aa0d9eba457c239664a3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -321,89 +128,47 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\45\452f75680e69afe5c7212759d2fd8214
     projectPath: Library\Artifacts\45\452f75680e69afe5c7212759d2fd8214
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Project3\Library\Artifacts\4a\4a75f9c7123bc24cdfec8fa87981db43
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\4a\4a75f9c7123bc24cdfec8fa87981db43
+    projectPath: Library\Artifacts\4a\4a75f9c7123bc24cdfec8fa87981db43
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\47\478730be98efb9e0ac464ef8b7ba3fbe
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\47\478730be98efb9e0ac464ef8b7ba3fbe
-    projectPath: Library\Artifacts\47\478730be98efb9e0ac464ef8b7ba3fbe
+  - path: Project3\Library\Artifacts\4a\4abb8ebef3fe4eaec55d76ebe3037661
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\4a\4abb8ebef3fe4eaec55d76ebe3037661
+    projectPath: Library\Artifacts\4a\4abb8ebef3fe4eaec55d76ebe3037661
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\4c\4c7a17060c5cf783a9e8cb1b47bdb922
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\4c\4c7a17060c5cf783a9e8cb1b47bdb922
-    projectPath: Library\Artifacts\4c\4c7a17060c5cf783a9e8cb1b47bdb922
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Project3\Library\Artifacts\51\51863456f53ced04a9d2f6f99731b988
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\51\51863456f53ced04a9d2f6f99731b988
     projectPath: Library\Artifacts\51\51863456f53ced04a9d2f6f99731b988
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Project3\Library\Artifacts\52\52255b479f236cb8faf580023adcf8c4
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\52\52255b479f236cb8faf580023adcf8c4
     projectPath: Library\Artifacts\52\52255b479f236cb8faf580023adcf8c4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\52\52a43daab3d1d0f7c347ec6c0a03759c
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\52\52a43daab3d1d0f7c347ec6c0a03759c
-    projectPath: Library\Artifacts\52\52a43daab3d1d0f7c347ec6c0a03759c
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\56\56630cbe5a272dc83aa1b3aa884b5824
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\56\56630cbe5a272dc83aa1b3aa884b5824
-    projectPath: Library\Artifacts\56\56630cbe5a272dc83aa1b3aa884b5824
+  - path: Project3\Library\Artifacts\54\54102fc2e1e902d7d68888f4f8aa1c62
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\54\54102fc2e1e902d7d68888f4f8aa1c62
+    projectPath: Library\Artifacts\54\54102fc2e1e902d7d68888f4f8aa1c62
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\57\5725e7c899c02931a6ffd776ba315687
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\57\5725e7c899c02931a6ffd776ba315687
-    projectPath: Library\Artifacts\57\5725e7c899c02931a6ffd776ba315687
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\57\57e9d5254b327f85f200f27972a73081
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\57\57e9d5254b327f85f200f27972a73081
-    projectPath: Library\Artifacts\57\57e9d5254b327f85f200f27972a73081
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Project3\Library\Artifacts\58\58d322c92349e88e101da5de90e4ab51
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\58\58d322c92349e88e101da5de90e4ab51
     projectPath: Library\Artifacts\58\58d322c92349e88e101da5de90e4ab51
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Project3\Library\Artifacts\59\59c0cc39ecb0776df058adf9d3a75ed1
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\59\59c0cc39ecb0776df058adf9d3a75ed1
     projectPath: Library\Artifacts\59\59c0cc39ecb0776df058adf9d3a75ed1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\5a\5a3aa5e30fdee7c675d5afc33ca9f8ae
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5a\5a3aa5e30fdee7c675d5afc33ca9f8ae
-    projectPath: Library\Artifacts\5a\5a3aa5e30fdee7c675d5afc33ca9f8ae
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\5a\5a5dd8f36dfbdf50e3523075a5db9327
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5a\5a5dd8f36dfbdf50e3523075a5db9327
-    projectPath: Library\Artifacts\5a\5a5dd8f36dfbdf50e3523075a5db9327
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\5b\5b12a7689340770d72a4e88c571d1b31
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5b\5b12a7689340770d72a4e88c571d1b31
-    projectPath: Library\Artifacts\5b\5b12a7689340770d72a4e88c571d1b31
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\5b\5be183ee1067422c940bb9795e835fb2
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5b\5be183ee1067422c940bb9795e835fb2
-    projectPath: Library\Artifacts\5b\5be183ee1067422c940bb9795e835fb2
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -411,89 +176,23 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5c\5cd285edb81ad3873f120be9b9977195
     projectPath: Library\Artifacts\5c\5cd285edb81ad3873f120be9b9977195
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\5e\5eb5c20fc09bce380cae0dd7afab8bfc
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\5e\5eb5c20fc09bce380cae0dd7afab8bfc
-    projectPath: Library\Artifacts\5e\5eb5c20fc09bce380cae0dd7afab8bfc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\61\61a96bba8a28b648098c8a3093f09639
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\61\61a96bba8a28b648098c8a3093f09639
-    projectPath: Library\Artifacts\61\61a96bba8a28b648098c8a3093f09639
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Project3\Library\Artifacts\62\622a5e0e72d3cb1be2b1d059a414c1f3
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\62\622a5e0e72d3cb1be2b1d059a414c1f3
     projectPath: Library\Artifacts\62\622a5e0e72d3cb1be2b1d059a414c1f3
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\64\6463c83ef49282d81c1e2207e117382d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\64\6463c83ef49282d81c1e2207e117382d
-    projectPath: Library\Artifacts\64\6463c83ef49282d81c1e2207e117382d
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\64\64d2a0dd945e40d01a78ffc2c700989c
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\64\64d2a0dd945e40d01a78ffc2c700989c
-    projectPath: Library\Artifacts\64\64d2a0dd945e40d01a78ffc2c700989c
+  - path: Project3\Library\Artifacts\66\667b1d9bbb661d57b738c32026942a89
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\66\667b1d9bbb661d57b738c32026942a89
+    projectPath: Library\Artifacts\66\667b1d9bbb661d57b738c32026942a89
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\65\658c6389b9485b15da1c6a433f30788d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\65\658c6389b9485b15da1c6a433f30788d
-    projectPath: Library\Artifacts\65\658c6389b9485b15da1c6a433f30788d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\66\666f56927aa3aa430a35cbc752622f84
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\66\666f56927aa3aa430a35cbc752622f84
-    projectPath: Library\Artifacts\66\666f56927aa3aa430a35cbc752622f84
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\69\69cbeb4a4d93fcd75de5cb02f172b52b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\69\69cbeb4a4d93fcd75de5cb02f172b52b
-    projectPath: Library\Artifacts\69\69cbeb4a4d93fcd75de5cb02f172b52b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\69\69e7e0e0ba041f2b99a147ea661343bc
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\69\69e7e0e0ba041f2b99a147ea661343bc
-    projectPath: Library\Artifacts\69\69e7e0e0ba041f2b99a147ea661343bc
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\6a\6a7ef0a2075cfe0e4be04e068421cfdd
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\6a\6a7ef0a2075cfe0e4be04e068421cfdd
-    projectPath: Library\Artifacts\6a\6a7ef0a2075cfe0e4be04e068421cfdd
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\6d\6dd435761d8b10e715d9fff30750d5d1
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\6d\6dd435761d8b10e715d9fff30750d5d1
-    projectPath: Library\Artifacts\6d\6dd435761d8b10e715d9fff30750d5d1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Project3\Library\Artifacts\70\703eac158b09b6630fafe7aab19fa657
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\70\703eac158b09b6630fafe7aab19fa657
     projectPath: Library\Artifacts\70\703eac158b09b6630fafe7aab19fa657
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\70\70c5a891b7bc79848e365eb6bb102d71
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\70\70c5a891b7bc79848e365eb6bb102d71
-    projectPath: Library\Artifacts\70\70c5a891b7bc79848e365eb6bb102d71
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\74\7445b539d5086e5323bb3995b0583ff6
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\74\7445b539d5086e5323bb3995b0583ff6
-    projectPath: Library\Artifacts\74\7445b539d5086e5323bb3995b0583ff6
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -501,23 +200,11 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\74\745aab3897a70e5efab09d3579293a8c
     projectPath: Library\Artifacts\74\745aab3897a70e5efab09d3579293a8c
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\74\74ca9a1599757463da54afc25665c648
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\74\74ca9a1599757463da54afc25665c648
-    projectPath: Library\Artifacts\74\74ca9a1599757463da54afc25665c648
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Project3\Library\Artifacts\77\770c5dd50b52fb1bf6bae9fa798f53d3
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\77\770c5dd50b52fb1bf6bae9fa798f53d3
     projectPath: Library\Artifacts\77\770c5dd50b52fb1bf6bae9fa798f53d3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\78\78661985bcdf4cf22de9eecee61e470e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\78\78661985bcdf4cf22de9eecee61e470e
-    projectPath: Library\Artifacts\78\78661985bcdf4cf22de9eecee61e470e
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -525,35 +212,11 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\79\7970bb5d975ff4f1d0ce50800ff5e61b
     projectPath: Library\Artifacts\79\7970bb5d975ff4f1d0ce50800ff5e61b
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\7b\7b21568d21889b357fc9890ae0e053a8
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\7b\7b21568d21889b357fc9890ae0e053a8
-    projectPath: Library\Artifacts\7b\7b21568d21889b357fc9890ae0e053a8
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\7d\7d5fcdae83542fe57fc3b42065ef68cc
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\7d\7d5fcdae83542fe57fc3b42065ef68cc
-    projectPath: Library\Artifacts\7d\7d5fcdae83542fe57fc3b42065ef68cc
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\81\8118a7b852d733253e8087015c32599b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\81\8118a7b852d733253e8087015c32599b
-    projectPath: Library\Artifacts\81\8118a7b852d733253e8087015c32599b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Library\Artifacts\82\825be12e97c65d1dbd9d98017d3c7227
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\82\825be12e97c65d1dbd9d98017d3c7227
     projectPath: Library\Artifacts\82\825be12e97c65d1dbd9d98017d3c7227
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\84\84dde6190322eea14d148ce4329b2f02
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\84\84dde6190322eea14d148ce4329b2f02
-    projectPath: Library\Artifacts\84\84dde6190322eea14d148ce4329b2f02
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -561,77 +224,23 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8a\8a04ff5941343f46638b516e370cf6a7
     projectPath: Library\Artifacts\8a\8a04ff5941343f46638b516e370cf6a7
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Project3\Library\Artifacts\8b\8b93da3f1864a764832e259e9943c62c
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8b\8b93da3f1864a764832e259e9943c62c
+    projectPath: Library\Artifacts\8b\8b93da3f1864a764832e259e9943c62c
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Project3\Library\Artifacts\8e\8e08a7121239abc68b2bd59f3af6a8da
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8e\8e08a7121239abc68b2bd59f3af6a8da
     projectPath: Library\Artifacts\8e\8e08a7121239abc68b2bd59f3af6a8da
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\8e\8e0bcb39aed17321d7be84ecf97c1800
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8e\8e0bcb39aed17321d7be84ecf97c1800
-    projectPath: Library\Artifacts\8e\8e0bcb39aed17321d7be84ecf97c1800
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\8e\8e5369ec34863605b2ec8c285bc7f99c
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8e\8e5369ec34863605b2ec8c285bc7f99c
-    projectPath: Library\Artifacts\8e\8e5369ec34863605b2ec8c285bc7f99c
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\8f\8fee619ae56cfb7e6c2ffa8956d0b264
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\8f\8fee619ae56cfb7e6c2ffa8956d0b264
-    projectPath: Library\Artifacts\8f\8fee619ae56cfb7e6c2ffa8956d0b264
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\90\90606a09be695658a1f48254bb4f0957
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\90\90606a09be695658a1f48254bb4f0957
-    projectPath: Library\Artifacts\90\90606a09be695658a1f48254bb4f0957
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\91\9169c8fc0b8a3cf0e49180002d4b2e89
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\91\9169c8fc0b8a3cf0e49180002d4b2e89
-    projectPath: Library\Artifacts\91\9169c8fc0b8a3cf0e49180002d4b2e89
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\96\964e799807fd2e46a7895f9e63ac64b5
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\96\964e799807fd2e46a7895f9e63ac64b5
-    projectPath: Library\Artifacts\96\964e799807fd2e46a7895f9e63ac64b5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\96\969c71196df59e679198856dcea7d70b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\96\969c71196df59e679198856dcea7d70b
-    projectPath: Library\Artifacts\96\969c71196df59e679198856dcea7d70b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\98\98905a2e891b5ad7e15d02febdc5f29a
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\98\98905a2e891b5ad7e15d02febdc5f29a
-    projectPath: Library\Artifacts\98\98905a2e891b5ad7e15d02febdc5f29a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\9b\9b28b53eb2183cace40793b7b7a2ac45
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\9b\9b28b53eb2183cace40793b7b7a2ac45
-    projectPath: Library\Artifacts\9b\9b28b53eb2183cace40793b7b7a2ac45
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\9c\9c133066d03fea505e0488d9368b6364
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\9c\9c133066d03fea505e0488d9368b6364
-    projectPath: Library\Artifacts\9c\9c133066d03fea505e0488d9368b6364
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\9c\9cbbd4302ea42eebcd10b70fa4f8dc4d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\9c\9cbbd4302ea42eebcd10b70fa4f8dc4d
-    projectPath: Library\Artifacts\9c\9cbbd4302ea42eebcd10b70fa4f8dc4d
+  - path: Project3\Library\Artifacts\90\906b44180c288ce4cf9c0cd0c0322532
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\90\906b44180c288ce4cf9c0cd0c0322532
+    projectPath: Library\Artifacts\90\906b44180c288ce4cf9c0cd0c0322532
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -639,77 +248,23 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\a1\a1b0da4189bd36bea56afad8a57c6c24
     projectPath: Library\Artifacts\a1\a1b0da4189bd36bea56afad8a57c6c24
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\a9\a9b14cb4f17c3904b51f22349cb20b89
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\a9\a9b14cb4f17c3904b51f22349cb20b89
-    projectPath: Library\Artifacts\a9\a9b14cb4f17c3904b51f22349cb20b89
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\ad\ad617b9062dced621f4a7a25898f9243
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ad\ad617b9062dced621f4a7a25898f9243
-    projectPath: Library\Artifacts\ad\ad617b9062dced621f4a7a25898f9243
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Project3\Library\Artifacts\ad\adf782e6fe3f317f7df37463700ae167
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ad\adf782e6fe3f317f7df37463700ae167
     projectPath: Library\Artifacts\ad\adf782e6fe3f317f7df37463700ae167
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\ae\ae4e0b5cd3d3dca7da2d4cbddb1245b2
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ae\ae4e0b5cd3d3dca7da2d4cbddb1245b2
-    projectPath: Library\Artifacts\ae\ae4e0b5cd3d3dca7da2d4cbddb1245b2
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\ae\ae6405fd49e185ef475162ae32096b57
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ae\ae6405fd49e185ef475162ae32096b57
-    projectPath: Library\Artifacts\ae\ae6405fd49e185ef475162ae32096b57
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\b1\b1eea1c2fe7b087f06b48121c5c57976
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\b1\b1eea1c2fe7b087f06b48121c5c57976
-    projectPath: Library\Artifacts\b1\b1eea1c2fe7b087f06b48121c5c57976
+  - path: Project3\Library\Artifacts\af\af958cc8e2bcb201d5c13af3e20f7511
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\af\af958cc8e2bcb201d5c13af3e20f7511
+    projectPath: Library\Artifacts\af\af958cc8e2bcb201d5c13af3e20f7511
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\b3\b33143a1f52ff55cb3778bce0244d408
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\b3\b33143a1f52ff55cb3778bce0244d408
-    projectPath: Library\Artifacts\b3\b33143a1f52ff55cb3778bce0244d408
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\b4\b4716c5bccec595be0c27651c795ecfe
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\b4\b4716c5bccec595be0c27651c795ecfe
-    projectPath: Library\Artifacts\b4\b4716c5bccec595be0c27651c795ecfe
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\b5\b5007427732dbdc3cf129b148b150539
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\b5\b5007427732dbdc3cf129b148b150539
-    projectPath: Library\Artifacts\b5\b5007427732dbdc3cf129b148b150539
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: Project3\Library\Artifacts\b8\b8af57f1e67f3f7c52f337a4134e11b9
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\b8\b8af57f1e67f3f7c52f337a4134e11b9
     projectPath: Library\Artifacts\b8\b8af57f1e67f3f7c52f337a4134e11b9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\bb\bb85d3d5cde14eafb8d611fbbc8d7505
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\bb\bb85d3d5cde14eafb8d611fbbc8d7505
-    projectPath: Library\Artifacts\bb\bb85d3d5cde14eafb8d611fbbc8d7505
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\bd\bd924f48fe6524e51948d88d2b549ce1
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\bd\bd924f48fe6524e51948d88d2b549ce1
-    projectPath: Library\Artifacts\bd\bd924f48fe6524e51948d88d2b549ce1
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -717,17 +272,11 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\c1\c1327771a1e63019f5076c927b8670d8
     projectPath: Library\Artifacts\c1\c1327771a1e63019f5076c927b8670d8
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\c8\c84fd1a0260da650860d47ece747f419
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\c8\c84fd1a0260da650860d47ece747f419
-    projectPath: Library\Artifacts\c8\c84fd1a0260da650860d47ece747f419
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\c8\c8dcce2f2377ec32d83f6a49d4fc0386
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\c8\c8dcce2f2377ec32d83f6a49d4fc0386
-    projectPath: Library\Artifacts\c8\c8dcce2f2377ec32d83f6a49d4fc0386
+  - path: Project3\Library\Artifacts\c2\c217b5286f87d57f81cb82edf2ff5677
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\c2\c217b5286f87d57f81cb82edf2ff5677
+    projectPath: Library\Artifacts\c2\c217b5286f87d57f81cb82edf2ff5677
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -735,77 +284,17 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\c9\c96116e0e38aaad334754e82c3f18dcb
     projectPath: Library\Artifacts\c9\c96116e0e38aaad334754e82c3f18dcb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\ca\ca487aaeeb2c5b7d0ec40db2a53eb16b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ca\ca487aaeeb2c5b7d0ec40db2a53eb16b
-    projectPath: Library\Artifacts\ca\ca487aaeeb2c5b7d0ec40db2a53eb16b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\ca\ca7e792ca815579820e2f55f16ab603b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ca\ca7e792ca815579820e2f55f16ab603b
-    projectPath: Library\Artifacts\ca\ca7e792ca815579820e2f55f16ab603b
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Project3\Library\Artifacts\cd\cd9924edfc5b2ae6a6efffd4250d32a4
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\cd\cd9924edfc5b2ae6a6efffd4250d32a4
     projectPath: Library\Artifacts\cd\cd9924edfc5b2ae6a6efffd4250d32a4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\ce\ce1e92c2eafcd993886b215e3623d37f
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ce\ce1e92c2eafcd993886b215e3623d37f
-    projectPath: Library\Artifacts\ce\ce1e92c2eafcd993886b215e3623d37f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\d2\d24cf8601b4352d4ab592729c8eb0c88
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\d2\d24cf8601b4352d4ab592729c8eb0c88
-    projectPath: Library\Artifacts\d2\d24cf8601b4352d4ab592729c8eb0c88
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\d7\d72765e29eba4888cc176f43a694ec52
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\d7\d72765e29eba4888cc176f43a694ec52
-    projectPath: Library\Artifacts\d7\d72765e29eba4888cc176f43a694ec52
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Project3\Library\Artifacts\d8\d8e183651bf9581fa35b568cd91466f0
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\d8\d8e183651bf9581fa35b568cd91466f0
-    projectPath: Library\Artifacts\d8\d8e183651bf9581fa35b568cd91466f0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\da\dac12cb0f59011cc2d9ed00da5790e9e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\da\dac12cb0f59011cc2d9ed00da5790e9e
-    projectPath: Library\Artifacts\da\dac12cb0f59011cc2d9ed00da5790e9e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\db\dba2dcb789aa91e618f8a07af7baeb29
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\db\dba2dcb789aa91e618f8a07af7baeb29
-    projectPath: Library\Artifacts\db\dba2dcb789aa91e618f8a07af7baeb29
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\dd\dd1a0df4d7637c44fe5f687bed715e77
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\dd\dd1a0df4d7637c44fe5f687bed715e77
-    projectPath: Library\Artifacts\dd\dd1a0df4d7637c44fe5f687bed715e77
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Library\Artifacts\dd\dd38e99cd758c234144fddac1e65e6a6
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\dd\dd38e99cd758c234144fddac1e65e6a6
     projectPath: Library\Artifacts\dd\dd38e99cd758c234144fddac1e65e6a6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\dd\dd6e75486a99146c808c1f6fc13fe2dc
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\dd\dd6e75486a99146c808c1f6fc13fe2dc
-    projectPath: Library\Artifacts\dd\dd6e75486a99146c808c1f6fc13fe2dc
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -813,92 +302,50 @@ MonoBehaviour:
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e0\e00e90007928999570dd9b4afb8416dc
     projectPath: Library\Artifacts\e0\e00e90007928999570dd9b4afb8416dc
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Project3\Library\Artifacts\e1\e1c81fa7134efc6991c81087ec01f0bd
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e1\e1c81fa7134efc6991c81087ec01f0bd
     projectPath: Library\Artifacts\e1\e1c81fa7134efc6991c81087ec01f0bd
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\e2\e26aafb5f5e67ddc77c57926fe429bc4
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e2\e26aafb5f5e67ddc77c57926fe429bc4
-    projectPath: Library\Artifacts\e2\e26aafb5f5e67ddc77c57926fe429bc4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Library\Artifacts\e2\e2c7a5dd29fc07c667b4a28f77db8404
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e2\e2c7a5dd29fc07c667b4a28f77db8404
-    projectPath: Library\Artifacts\e2\e2c7a5dd29fc07c667b4a28f77db8404
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Project3\Library\Artifacts\e4\e4c2f307e20dc809092a2052f5dd2c2e
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e4\e4c2f307e20dc809092a2052f5dd2c2e
+    projectPath: Library\Artifacts\e4\e4c2f307e20dc809092a2052f5dd2c2e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\e3\e30646d7829d37c246580784ae8d4d82
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e3\e30646d7829d37c246580784ae8d4d82
-    projectPath: Library\Artifacts\e3\e30646d7829d37c246580784ae8d4d82
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\e5\e5a0825257521bda904b362ec28180f5
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e5\e5a0825257521bda904b362ec28180f5
-    projectPath: Library\Artifacts\e5\e5a0825257521bda904b362ec28180f5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\ec\ecb611d75941766ade4c9eee58b0f0a6
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ec\ecb611d75941766ade4c9eee58b0f0a6
-    projectPath: Library\Artifacts\ec\ecb611d75941766ade4c9eee58b0f0a6
+  - path: Project3\Library\Artifacts\e5\e5c34641764dd9c1d106c31e2afe316b
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e5\e5c34641764dd9c1d106c31e2afe316b
+    projectPath: Library\Artifacts\e5\e5c34641764dd9c1d106c31e2afe316b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\ec\eccf5d9853aa727e6f9175ee6b0529d5
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ec\eccf5d9853aa727e6f9175ee6b0529d5
-    projectPath: Library\Artifacts\ec\eccf5d9853aa727e6f9175ee6b0529d5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\f9\f978f06423b877137a425d2611a1343e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\f9\f978f06423b877137a425d2611a1343e
-    projectPath: Library\Artifacts\f9\f978f06423b877137a425d2611a1343e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\f9\f9e48630729379618896c47ddd04330a
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\f9\f9e48630729379618896c47ddd04330a
-    projectPath: Library\Artifacts\f9\f9e48630729379618896c47ddd04330a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\fa\fa864af286262d0c374786eb00378dd3
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\fa\fa864af286262d0c374786eb00378dd3
-    projectPath: Library\Artifacts\fa\fa864af286262d0c374786eb00378dd3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\fa\fadfc6dfbc8ba3661de32c7daf07036c
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\fa\fadfc6dfbc8ba3661de32c7daf07036c
-    projectPath: Library\Artifacts\fa\fadfc6dfbc8ba3661de32c7daf07036c
+  - path: Project3\Library\Artifacts\e8\e80f666fd75b7847c35c5d40ea45430b
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\e8\e80f666fd75b7847c35c5d40ea45430b
+    projectPath: Library\Artifacts\e8\e80f666fd75b7847c35c5d40ea45430b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Library\Artifacts\fe\fe41d3676abc752921f69ae405ab7658
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\fe\fe41d3676abc752921f69ae405ab7658
-    projectPath: Library\Artifacts\fe\fe41d3676abc752921f69ae405ab7658
+  - path: Project3\Library\Artifacts\ef\efb49ffa44f9fdf9199fb9cfec06b514
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\ef\efb49ffa44f9fdf9199fb9cfec06b514
+    projectPath: Library\Artifacts\ef\efb49ffa44f9fdf9199fb9cfec06b514
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\Artifacts\fe\fe6b1ac6ca3eb4b5cd09f864002328c4
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\fe\fe6b1ac6ca3eb4b5cd09f864002328c4
-    projectPath: Library\Artifacts\fe\fe6b1ac6ca3eb4b5cd09f864002328c4
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Project3\Library\Artifacts\f0\f0af7a678e5a4114eff956cc72344d5d
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\f0\f0af7a678e5a4114eff956cc72344d5d
+    projectPath: Library\Artifacts\f0\f0af7a678e5a4114eff956cc72344d5d
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Project3\Library\CurrentLayout-default.dwlt
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Project3\Library\Artifacts\f1\f12d899d2c384865b35fa59f29231e1e
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\Artifacts\f1\f12d899d2c384865b35fa59f29231e1e
+    projectPath: Library\Artifacts\f1\f12d899d2c384865b35fa59f29231e1e
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Project3\Library\EditorInstance.json
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
@@ -965,36 +412,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Project3\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Project3\Library\SourceAssetDB
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Project3\Library\StateCache\Hierarchy\e61f11-a91c6d7228ce6674fb.json
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\StateCache\Hierarchy\e61f11-a91c6d7228ce6674fb.json
-    projectPath: Library\StateCache\Hierarchy\e61f11-a91c6d7228ce6674fb.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Library\StateCache\Hierarchy\e61f11-mainStage.json
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\StateCache\Hierarchy\e61f11-mainStage.json
     projectPath: Library\StateCache\Hierarchy\e61f11-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Project3\Library\StateCache\SceneView\f56961-a91c6d7228ce6674fb.json
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Library\StateCache\SceneView\f56961-a91c6d7228ce6674fb.json
-    projectPath: Library\StateCache\SceneView\f56961-a91c6d7228ce6674fb.json
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Project3\Temp\__Backupscenes\0.backup
     fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
@@ -1007,147 +436,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-020365f3f0c37fe498b1fc86c34a8cab
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-020365f3f0c37fe498b1fc86c34a8cab
-    projectPath: Temp\UnityTempFile-020365f3f0c37fe498b1fc86c34a8cab
+  - path: Project3\Temp\UnityTempFile-13cc8cf69f2e2394d89979b25c82c5bb
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-13cc8cf69f2e2394d89979b25c82c5bb
+    projectPath: Temp\UnityTempFile-13cc8cf69f2e2394d89979b25c82c5bb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-0437dc8083134d540b6d7373a86f13e2
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-0437dc8083134d540b6d7373a86f13e2
-    projectPath: Temp\UnityTempFile-0437dc8083134d540b6d7373a86f13e2
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-16b7531f4db8a784086d691583a51478
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-16b7531f4db8a784086d691583a51478
-    projectPath: Temp\UnityTempFile-16b7531f4db8a784086d691583a51478
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-204289f5c6e87564dbb879adb1b1eb71
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-204289f5c6e87564dbb879adb1b1eb71
-    projectPath: Temp\UnityTempFile-204289f5c6e87564dbb879adb1b1eb71
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-25a5e0afc62609e45a9767d143eaa02e
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-25a5e0afc62609e45a9767d143eaa02e
-    projectPath: Temp\UnityTempFile-25a5e0afc62609e45a9767d143eaa02e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-2777f54e83520db4c86e0c413002ee03
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-2777f54e83520db4c86e0c413002ee03
-    projectPath: Temp\UnityTempFile-2777f54e83520db4c86e0c413002ee03
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-2d49fb39294a6bc419e2dcbedd982098
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-2d49fb39294a6bc419e2dcbedd982098
-    projectPath: Temp\UnityTempFile-2d49fb39294a6bc419e2dcbedd982098
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-2f26c2297ce57ed4a9897961adbb298b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-2f26c2297ce57ed4a9897961adbb298b
-    projectPath: Temp\UnityTempFile-2f26c2297ce57ed4a9897961adbb298b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-355a54134c55ce849a11d136fd904f03
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-355a54134c55ce849a11d136fd904f03
-    projectPath: Temp\UnityTempFile-355a54134c55ce849a11d136fd904f03
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-3f6aec953d0df764395c8ed3c910d45d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-3f6aec953d0df764395c8ed3c910d45d
-    projectPath: Temp\UnityTempFile-3f6aec953d0df764395c8ed3c910d45d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-4e4132c858956454a85a57b1f84cb2df
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-4e4132c858956454a85a57b1f84cb2df
-    projectPath: Temp\UnityTempFile-4e4132c858956454a85a57b1f84cb2df
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-526ced7f66e00f14bb3799a011e56698
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-526ced7f66e00f14bb3799a011e56698
-    projectPath: Temp\UnityTempFile-526ced7f66e00f14bb3799a011e56698
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-7e6a52aa08c0b5845bc97f65344af736
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-7e6a52aa08c0b5845bc97f65344af736
-    projectPath: Temp\UnityTempFile-7e6a52aa08c0b5845bc97f65344af736
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-a1fc7568028d2ca428ee312294d417e3
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-a1fc7568028d2ca428ee312294d417e3
-    projectPath: Temp\UnityTempFile-a1fc7568028d2ca428ee312294d417e3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-a7878b7601c85d946b49ec356a3b0c31
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-a7878b7601c85d946b49ec356a3b0c31
-    projectPath: Temp\UnityTempFile-a7878b7601c85d946b49ec356a3b0c31
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-aa3ec679c24154a409de7bb5bd324cee
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-aa3ec679c24154a409de7bb5bd324cee
-    projectPath: Temp\UnityTempFile-aa3ec679c24154a409de7bb5bd324cee
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-aafabb9241bd77c4f9a637f1916c80ff
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-aafabb9241bd77c4f9a637f1916c80ff
-    projectPath: Temp\UnityTempFile-aafabb9241bd77c4f9a637f1916c80ff
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-b2d8763164312f840a45da776f57b1a1
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-b2d8763164312f840a45da776f57b1a1
-    projectPath: Temp\UnityTempFile-b2d8763164312f840a45da776f57b1a1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-b2daece257259be4c98a391db6781332
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-b2daece257259be4c98a391db6781332
-    projectPath: Temp\UnityTempFile-b2daece257259be4c98a391db6781332
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-cef2537651d87834ab91e936e83ca6c2
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-cef2537651d87834ab91e936e83ca6c2
-    projectPath: Temp\UnityTempFile-cef2537651d87834ab91e936e83ca6c2
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-e015a24fb7177d24b86fcc961f78085b
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-e015a24fb7177d24b86fcc961f78085b
-    projectPath: Temp\UnityTempFile-e015a24fb7177d24b86fcc961f78085b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-e982737e181bb12409dde8f0632e895d
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-e982737e181bb12409dde8f0632e895d
-    projectPath: Temp\UnityTempFile-e982737e181bb12409dde8f0632e895d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-f2f305b92dde76343b49f1f767b48725
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-f2f305b92dde76343b49f1f767b48725
-    projectPath: Temp\UnityTempFile-f2f305b92dde76343b49f1f767b48725
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Project3\Temp\UnityTempFile-fa4fe0a0ceeeabf4e8176989594d2e9a
-    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-fa4fe0a0ceeeabf4e8176989594d2e9a
-    projectPath: Temp\UnityTempFile-fa4fe0a0ceeeabf4e8176989594d2e9a
+  - path: Project3\Temp\UnityTempFile-748f50667aa301f4184769151c9d5ecb
+    fullPath: C:\Users\renuka\Desktop\dsa\DSAunity\Project3\Temp\UnityTempFile-748f50667aa301f4184769151c9d5ecb
+    projectPath: Temp\UnityTempFile-748f50667aa301f4184769151c9d5ecb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
