@@ -20,8 +20,8 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public int columns = 18;
-    public int rows = 10;
+    public int columns = 19;
+    public int rows = 12;
 
     public GameObject floor1; //f
     public GameObject lake1; //l
@@ -58,6 +58,12 @@ public class BoardManager : MonoBehaviour
     public GameObject coffeeMachine2; //cm2
     public GameObject coffeeMachine3; //cm3
     public GameObject coffeeMachine4; //cm4
+    public GameObject wall2; //w2
+    public GameObject computer; //co
+    public GameObject blackBoard1; //bb1
+    public GameObject blackBoard2; //bb2
+    public GameObject blackBoard3; //bb3
+
     private Transform boardHolder; //A variable to store a reference to the transform of our Board object.
 
     private List <Vector3> gridPositions = new List <Vector3> ();    //A list of possible locations to place tiles.
@@ -99,6 +105,26 @@ public class BoardManager : MonoBehaviour
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cm4", "cm3"},
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cf", "w"} };
 
+    private string[,] office = new string[19,12] { {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
+						                            {"w2", "cf", "ch", "cf", "w2", "cf", "cf", "w2", "cf", "ch", "cf", "w2"},
+						                            {"w2", "st", "co", "cf", "bb1", "cf", "cf", "w2", "st", "co", "cf", "bb1"},
+                        						    {"w2", "st", "t4", "cf", "bb2", "cf", "cf", "w2", "st", "t4", "cf", "bb2"},
+						                            {"w2", "cf", "cf", "cf", "bb3", "cf", "cf", "w2", "cf", "cf", "cf", "bb3"},
+                        						    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w2"},
+                        						    {"w2", "w2", "w2", "w2", "w2", "cf", "cf", "w2", "w2", "w2", "w2", "w2"},
+                                                    {"w2", "cf", "ch", "cf", "w2", "cf", "cf", "w2", "cf", "ch", "cf", "w2"},
+                                                    {"w2", "st", "co", "cf", "bb1", "cf", "cf", "w2", "st", "co", "cf", "bb1"},
+                                                    {"w2", "st", "t4", "cf", "bb2", "cf", "cf", "w2", "st", "t4", "cf", "bb2"},
+                                                    {"w2", "cf", "cf", "cf", "bb3", "cf", "cf", "w2", "cf", "cf", "cf", "bb3"},
+                                                    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w2"},
+                                                    {"w2", "w2", "w2", "w2", "w2", "cf", "cf", "w2", "w2", "w2", "w2", "w2"},
+                                                    {"w2", "cf", "ch", "cf", "w2", "cf", "cf", "w2", "cf", "ch", "cf", "w2"},
+                                                    {"w2", "st", "co", "cf", "bb1", "cf", "cf", "w2", "st", "co", "cf","bb1"},
+                                                    {"w2", "st", "t4", "cf", "bb2", "cf", "cf", "w2", "st", "t4", "cf", "bb2"},
+                                                    {"w2", "cf", "cf", "cf", "bb3", "cf", "cf", "w2", "cf", "cf", "cf", "bb3"},
+                                                    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w2"},
+                                                    {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"} };
+
 
     //SetupScene initializes our level and calls the previous functions to lay out the game board
     public void SetupScene (string level)
@@ -109,7 +135,7 @@ public class BoardManager : MonoBehaviour
         {
             for(int y = 0; y < rows; y++)
             {
-		        str = canteen[x,y];
+		        str = office[x,y];
                 switch (str)
                 {
                     case "i":
@@ -182,6 +208,16 @@ public class BoardManager : MonoBehaviour
                         Instantiate(coffeeMachine3, new Vector3(x, y, 0f), Quaternion.identity); break;
                     case "cm4":
                         Instantiate(coffeeMachine4, new Vector3(x, y, 0f), Quaternion.identity); break;
+		            case "w2":
+                        Instantiate(wall2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "co":
+                        Instantiate(computer, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "bb1":
+                        Instantiate(blackBoard1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "bb2":
+                        Instantiate(blackBoard2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                    case "bb3":
+                        Instantiate(blackBoard3, new Vector3(x, y, 0f), Quaternion.identity); break;
                     default:
                         str = ""; break;
                 }

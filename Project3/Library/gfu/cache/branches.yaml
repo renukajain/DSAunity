@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-01-03T21:39:49.242+01:00
-  initializedAtString: 2021-01-03T21:39:48.786+01:00
+  lastUpdatedAtString: 2021-01-05T18:09:31.482+01:00
+  initializedAtString: 2021-01-05T14:16:36.610+01:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -44,9 +46,15 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - master
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/renukajain/DSAunity.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/renukajain/DSAunity.git
