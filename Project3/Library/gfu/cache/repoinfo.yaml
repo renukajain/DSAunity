@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-01-05T21:00:45.465+01:00
-  initializedAtString: 2021-01-05T21:00:45.465+01:00
+  lastUpdatedAtString: 2021-01-07T11:22:28.931+01:00
+  initializedAtString: 2021-01-07T11:22:28.931+01:00
   currentGitRemote:
     name: origin
-    url: https://github.com/renukajain/DSAunity.git
+    url: https://github.com/renukajain/DSAunity
     login: 
     user: 
     host: 
@@ -25,14 +25,14 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: master
-    tracking: origin/master
+    tracking: 
   currentConfigBranch:
     name: master
     remote:
-      name: origin
-      url: https://github.com/renukajain/DSAunity.git
-    trackingBranch: master
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
-    url: https://github.com/renukajain/DSAunity.git
+    url: https://github.com/renukajain/DSAunity
   currentHead: 

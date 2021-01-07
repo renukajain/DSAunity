@@ -105,13 +105,13 @@ public class BoardManager : MonoBehaviour
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cm4", "cm3"},
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cf", "w"} };
 
-    private string[,] office = new string[19,12] { {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
-						    {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
-						    {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
-                        			    {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
-						    {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
-                        			    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                        			    {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
+    private string[,] office = new string[19,12] {  {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
+						                            {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
+						                            {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
+                        			                {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
+						                            {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
+                        			                {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
+                        			                {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
                                                     {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
                                                     {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
                                                     {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
@@ -129,13 +129,28 @@ public class BoardManager : MonoBehaviour
     //SetupScene initializes our level and calls the previous functions to lay out the game board
     public void SetupScene (string level)
     {
-	    //setupMap();
+
+        //if (level == "lake")
+        //    columns = lake.columns();
+        //    rows = lake.rows();
+        //else if (level == "canteen")
+        //    str = canteen[x, y];
+        //else if (level == "office")
+        //    str = office[x, y];
+        //setupMap();
         string str;
         for(int x = 0; x < columns; x++)
         {
             for(int y = 0; y < rows; y++)
             {
-		        str = office[x,y];
+                //if (level == "lake")
+                //    str = lake[x, y];
+               // else if (level == "canteen")
+                //    str = canteen[x, y];
+                //else if (level == "office")
+                //    str = office[x, y];
+                //else
+                str = office[x, y];
                 switch (str)
                 {
                     case "i":
