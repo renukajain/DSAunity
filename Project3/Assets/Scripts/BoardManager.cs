@@ -20,8 +20,9 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public int columns = 19;
-    public int rows = 12;
+    public int columns;
+    public int rows;
+    public string [,] map = new string [10,10];
 
     public GameObject floor1; //f
     public GameObject lake1; //l
@@ -63,6 +64,7 @@ public class BoardManager : MonoBehaviour
     public GameObject blackBoard1; //bb1
     public GameObject blackBoard2; //bb2
     public GameObject blackBoard3; //bb3
+    
 
     private Transform boardHolder; //A variable to store a reference to the transform of our Board object.
 
@@ -106,12 +108,12 @@ public class BoardManager : MonoBehaviour
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cf", "w"} };
 
     private string[,] office = new string[19,12] { {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
-						    {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
-						    {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
-                        			    {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
-						    {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
-                        			    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                        			    {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
+						                            {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
+						                            {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
+                        			                {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
+						                            {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
+                                                    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
+                                                    {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
                                                     {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
                                                     {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
                                                     {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
@@ -126,16 +128,21 @@ public class BoardManager : MonoBehaviour
                                                     {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"} };
 
 
-    //SetupScene initializes our level and calls the previous functions to lay out the game board
+    public void setupMap(string [,] map){
+        rows = map.GetLength(1);
+	    columns = map.GetLength(0);
+    } 
     public void SetupScene (string level)
     {
-	    //setupMap();
+	    setupMap(canteen);
         string str;
+	    rows = canteen.GetLength(1);
+	    columns = canteen.GetLength(0);
         for(int x = 0; x < columns; x++)
         {
             for(int y = 0; y < rows; y++)
             {
-		        str = office[x,y];
+		        str = canteen[x,y];
                 switch (str)
                 {
                     case "i":
