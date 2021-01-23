@@ -736,12 +736,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 191
+        y: 291
         width: 384
-        height: 336
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 201, y: 0, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2533,27 +2533,6 @@ TextureImporter:
       bones: []
       spriteID: 8da363d6ab2985ea0800000000000000
       internalID: -5883791583765710120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: school_b_tileset_rpgmaker_mv_by_alilali_dc6ltva-fullview_102
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 93
-        width: 26
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5139f9ed9048fdb0800000000000000
-      internalID: -4757981959337463458
       vertices: []
       indices: 
       edges: []

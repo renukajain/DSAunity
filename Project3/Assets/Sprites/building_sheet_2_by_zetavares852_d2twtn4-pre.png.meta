@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: e8d72f320d375324b89c9dafb7a3e442
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8658645507682981078
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_0
+  - first:
+      213: 8116606976124051859
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_1
+  - first:
+      213: -3616018135836176154
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_2
+  - first:
+      213: -4084513832353331668
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_3
+  - first:
+      213: -4736456614911961726
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_4
+  - first:
+      213: -1753946736336750263
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_5
+  - first:
+      213: -791122844856883726
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_6
+  - first:
+      213: -1978661079424310286
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_7
+  - first:
+      213: -7072110041385390796
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_8
+  - first:
+      213: -279915462487276881
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_9
+  - first:
+      213: 745940694309976747
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_10
+  - first:
+      213: -8792071078148601354
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_11
+  - first:
+      213: 6982712728644141364
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_12
+  - first:
+      213: -8342683938055105835
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_13
+  - first:
+      213: -2115302712823441689
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_14
+  - first:
+      213: -7941814785292610662
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_15
+  - first:
+      213: -343099238900552161
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_16
+  - first:
+      213: 1272043589335330701
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_17
+  - first:
+      213: 2581847226281621305
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_18
+  - first:
+      213: -8735629218536638586
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_19
+  - first:
+      213: -3975627770724566580
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_20
+  - first:
+      213: 2160197154013338485
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_21
+  - first:
+      213: 8748457975587754006
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_22
+  - first:
+      213: 4094614067279030224
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_23
+  - first:
+      213: 1728673533687972840
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_24
+  - first:
+      213: -7053823051647654033
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_25
+  - first:
+      213: 2552542169873406461
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_26
+  - first:
+      213: -8950755770905269032
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_27
+  - first:
+      213: -1645148219229698597
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_28
+  - first:
+      213: -8363868865038209540
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_29
+  - first:
+      213: 3570744108249401089
+    second: building_sheet_2_by_zetavares852_d2twtn4-pre_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 822
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4d979b630b92870800000000000000
+      internalID: 8658645507682981078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 688
+        width: 213
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391e4598a0bf3a070800000000000000
+      internalID: 8116606976124051859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 775
+        width: 312
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e05d18f9a251ddc0800000000000000
+      internalID: -3616018135836176154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_3
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 639
+        width: 138
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2609666f44e057c0800000000000000
+      internalID: -4084513832353331668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_4
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 668
+        width: 86
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2859f16bdc9b44eb0800000000000000
+      internalID: -4736456614911961726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_5
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 736
+        width: 73
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94931b17cbab8a7e0800000000000000
+      internalID: -1753946736336750263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 752
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5eb92d6fd5505f0800000000000000
+      internalID: -791122844856883726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_7
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 654
+        width: 78
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3e50e4b326a84e0800000000000000
+      internalID: -1978661079424310286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_8
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 654
+        width: 168
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d20c21361dadd90800000000000000
+      internalID: -7072110041385390796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 58
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa28e43be5a8d1cf0800000000000000
+      internalID: -279915462487276881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 570
+        width: 80
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baabadbfb1d1a5a00800000000000000
+      internalID: 745940694309976747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 598
+        width: 103
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f987f2dfe94cf580800000000000000
+      internalID: -8792071078148601354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_12
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 567
+        width: 88
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431ce6f0b3497e060800000000000000
+      internalID: 6982712728644141364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 668
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25ed6e825d83c80800000000000000
+      internalID: -8342683938055105835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 474
+        width: 131
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e61db9d36fe4a2e0800000000000000
+      internalID: -2115302712823441689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 570
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9350b2c78109c190800000000000000
+      internalID: -7941814785292610662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 570
+        width: 104
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e20ae5f011d3bf0800000000000000
+      internalID: -343099238900552161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_17
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 488
+        width: 90
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f2529a7e437a110800000000000000
+      internalID: 1272043589335330701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_18
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 474
+        width: 214
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937f7d28f5094d320800000000000000
+      internalID: 2581847226281621305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 432
+        width: 94
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687b993528fc4c680800000000000000
+      internalID: -8735629218536638586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 485
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9b8c63b9bb3d8c0800000000000000
+      internalID: -3975627770724566580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_21
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 488
+        width: 61
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b56c9cddf8afd10800000000000000
+      internalID: 2160197154013338485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_22
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 485
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610575f6d24c86970800000000000000
+      internalID: 8748457975587754006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_23
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 453
+        width: 74
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7eb7ccccdf2d830800000000000000
+      internalID: 4094614067279030224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 205
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e347148b6b7df710800000000000000
+      internalID: 1728673533687972840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_25
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 206
+        width: 232
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67641aae49cb1e90800000000000000
+      internalID: -7053823051647654033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_26
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 185
+        width: 208
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9528d54937c6320800000000000000
+      internalID: 2552542169873406461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_27
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 218
+        width: 177
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dce9ebac0788c380800000000000000
+      internalID: -8950755770905269032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 151
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd582f539624b29e0800000000000000
+      internalID: -1645148219229698597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 87
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfda277b4919deb80800000000000000
+      internalID: -8363868865038209540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_sheet_2_by_zetavares852_d2twtn4-pre_30
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107460c09d4dd8130800000000000000
+      internalID: 3570744108249401089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

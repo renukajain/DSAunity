@@ -22,8 +22,13 @@ public class BoardManager : MonoBehaviour
 
     public int columns;
     public int rows;
-    public string [,] map = new string [10,10];
 
+    public Count foodCount = new Count (10, 20);
+    public GameObject turtle;
+    public GameObject residence; //r
+    public GameObject cofeeBuilding; //q
+    public GameObject eetacBuilding; //u
+    public GameObject exitTile; //e
     public GameObject floor1; //f
     public GameObject lake1; //l
     public GameObject lake2; //z
@@ -65,31 +70,40 @@ public class BoardManager : MonoBehaviour
     public GameObject blackBoard2; //bb2
     public GameObject blackBoard3; //bb3
     
-
+    private GameObject mainCamera;
     private Transform boardHolder; //A variable to store a reference to the transform of our Board object.
 
     private List <Vector3> gridPositions = new List <Vector3> ();    //A list of possible locations to place tiles.
-    private string[,] lake = new string[18, 10] { {"f", "f", "f", "f", "f", "f", "f", "f", "f", "f"},
-                                                 {"f", "g", "g", "g", "g", "g", "g", "g", "g", "f"},
-                                                 {"f", "g", "x", "k", "k", "k", "k", "i", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                 {"f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                 {"f", "g", "v", "n", "n", "n", "n", "p", "g", "f"},
-                                                 {"f", "g", "g", "g", "g", "g", "g", "g", "g", "f"},
-                                                 {"f", "f", "f", "f", "f", "f", "f", "f", "f", "f"} };
+    public string lake = "10 18\n"
+        + "e f f f f f f f f f f f f f f f f f\n"
+        + "f g g g g g g g g g g g g g g g g f\n"
+        + "f g i o o o o o o o o o o o o p g f\n"
+        + "f g k l l l l l l l l l l l l n g f\n"
+        + "f g k l l l z l l l l l z l l n g f\n"
+        + "f g k l l l l l l z l l l l l n g f\n"
+        + "f g k l l l l l l l l l l l l n g f\n"
+        + "f g x c c c c c c c c c c c c v g f\n"
+        + "f g g g g g g g g g g g g g g g g f\n"
+        + "f f f f f f f f f f f f f f f f f f\n";
 
-    private string[,] canteen = new string[18,10] { {"cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                                                    {"cf", "st", "t2", "t1", "cf", "cf", "st", "t2", "t1", "w"},
+    public string campus = "14 18\n"
+        + "g g g g g g g g g g g g g g g g g g\n"
+        + "g f f f f f f f f f f f f f f f f g\n"
+        + "g f f f f f f f f f f f f f f f f g\n"
+        + "g f g g g g g g f f g g g g g g f g\n"
+        + "g f g r 1 1 f f f f f f q 1 1 g f g\n"
+        + "g f g 1 1 1 f f f f f f 1 1 1 g f g\n"
+        + "g f g g g g g g f f g g g g g g f g\n"
+        + "g f g u 1 1 f f f f g g g g g g g g\n"
+        + "g f g 1 1 1 f f f f g g i o p g g g\n"
+        + "g f g 1 1 1 f f f f g g k z n g g g\n"
+        + "g f g g g g g g f f g g x c v g g g\n"
+        + "g f f f f f f f f f g g g g g g g g\n"
+        + "g f f f f f f f f f f f f f f f f g\n"
+        + "g g g g g g g g g g g g g g g g g g\n";
+
+    /*private string[,] canteen = new string[18,10] { {"C C C C C C C C C C ","cf", "cf", "cf", "cf", "w"},
+                                                    {"", "st", "t2", "t1", "cf", "cf", "st", "t2", "t1", "w"},
                                                     {"cf", "st", "t4", "t3", "cf", "cf", "st", "t4", "t3", "w"},
                                                     {"cf", "cf", "st", "st", "cf", "cf", "cf", "st", "st", "w"},
                                                     {"cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
@@ -106,7 +120,7 @@ public class BoardManager : MonoBehaviour
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cm2", "cm1"},
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cm4", "cm3"},
                                                     {"cf", "cf", "cf", "cf", "b6", "b5", "cf", "cf", "cf", "w"} };
-
+*/
     private string[,] office = new string[19,12] { {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
 						                            {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
 						                            {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
@@ -127,49 +141,91 @@ public class BoardManager : MonoBehaviour
                                                     {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
                                                     {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"} };
 
+//RandomPosition returns a random position from our list gridPositions.
+    Vector3 RandomPosition ()
+    {
+            //Declare an integer randomIndex, set it's value to a random number between 0 and the count of items in our List gridPositions.
+        int randomIndex = Random.Range (0, gridPositions.Count);
 
-    public void setupMap(string [,] map){
-        rows = map.GetLength(1);
-	    columns = map.GetLength(0);
-    } 
+            //Declare a variable of type Vector3 called randomPosition, set it's value to the entry at randomIndex from our List gridPositions.
+        Vector3 randomPosition = gridPositions[randomIndex];
+
+            //Remove the entry at randomIndex from the list so that it can't be re-used.
+        gridPositions.RemoveAt (randomIndex);
+
+            //Return the randomly selected Vector3 position.
+        return randomPosition;
+    }
+
+    void LayoutObjectAtRandom (GameObject tileArray, int minimum, int maximum)
+    {
+                //Choose a random number of objects to instantiate within the minimum and maximum limits
+        int objectCount = Random.Range (minimum, maximum+1);
+
+                //Instantiate objects until the randomly chosen limit objectCount is reached
+        for(int i = 0; i < objectCount; i++)
+        {
+                    //Choose a position for randomPosition by getting a random position from our list of available Vector3s stored in gridPosition
+            Vector3 randomPosition = RandomPosition();
+
+                    //Choose a random tile from tileArray and assign it to tileChoice
+            GameObject tileChoice = tileArray;
+
+                    //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
+            Instantiate(tileChoice, randomPosition, Quaternion.identity);
+        }
+    }
+
     public void SetupScene (string level)
     {
-	    setupMap(canteen);
-        string str;
-	    rows = canteen.GetLength(1);
-	    columns = canteen.GetLength(0);
-        for(int x = 0; x < columns; x++)
+        gridPositions.Clear ();
+        string[] map = lake.Split('\n');
+        string[] d = map[0].Split(' ');
+        int columns = Int32.Parse(d[1]);
+        int rows = Int32.Parse(d[0]);
+        for(int y = 1; y < rows+1; y++)
         {
-            for(int y = 0; y < rows; y++)
+            string line = map[y];
+            string[] p = line.Split(' ');
+            for(int x = 0; x < columns; x++)
             {
-		        str = canteen[x,y];
-                switch (str)
+                switch (p[x])
                 {
+                    case "e":
+                         Instantiate(exitTile, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "i":
-                        Instantiate(lakeBorder1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder1, new Vector3(x, rows-y,0f), Quaternion.identity); break;
                     case "o":
-                        Instantiate(lakeBorder2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder2, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "p":
-                        Instantiate(lakeBorder3, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder3, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "k":
-                        Instantiate(lakeBorder4, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder4, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "n":
-                        Instantiate(lakeBorder6, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder6, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "x":
-                        Instantiate(lakeBorder7, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder7, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "c":
-                        Instantiate(lakeBorder8, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder8, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "v":
-                        Instantiate(lakeBorder9, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lakeBorder9, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "f":
-                        Instantiate(floor1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(floor1, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "l":
-                        Instantiate(lake1, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lake1, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "z":
-                        Instantiate(lake2, new Vector3(x, y, 0f), Quaternion.identity); break;
+                        Instantiate(lake2, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
                     case "g":
-                        Instantiate(grass1, new Vector3(x, y, 0f), Quaternion.identity); break;
-                    case "cf":
+                        Instantiate(grass1, new Vector3(x, rows-y, 0f), Quaternion.identity);
+                        gridPositions.Add (new Vector3(x, rows-y, 0f));
+                        break;
+                    case "r":
+                        Instantiate(residence, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
+                    case "q":
+                        Instantiate(cofeeBuilding, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
+                    case "u":
+                        Instantiate(eetacBuilding, new Vector3(x, rows-y, 0f), Quaternion.identity); break;
+                    /*case "cf":
                         Instantiate(Canteen_floor, new Vector3(x, y, 0f), Quaternion.identity); break;
                     case "t1":
                         Instantiate(table1, new Vector3(x, y, 0f), Quaternion.identity); break;
@@ -225,10 +281,12 @@ public class BoardManager : MonoBehaviour
                         Instantiate(blackBoard2, new Vector3(x, y, 0f), Quaternion.identity); break;
                     case "bb3":
                         Instantiate(blackBoard3, new Vector3(x, y, 0f), Quaternion.identity); break;
-                    default:
-                        str = ""; break;
+                   */ default:
+                        break;
                 }
-	    }
+	        }
         }
+        LayoutObjectAtRandom (turtle, 5, 10);
     }
+
 }

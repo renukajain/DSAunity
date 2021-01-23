@@ -3,7 +3,65 @@ guid: 06c23589cd72cef4586d16abed486a69
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - residence: {fileID: 7296756164437498814, guid: 6950392a4428f7c40b1ef884bd2622e4,
+      type: 3}
+  - cofeeBuilding: {fileID: 7068833739298120704, guid: d5e221074979fe44a8cce6b73e7eba1b,
+      type: 3}
+  - eetacBuilding: {fileID: 8749227732460213807, guid: 3cd71375ca525e44eaff1d0ca8e219cd,
+      type: 3}
+  - exitTile: {fileID: 4023446680666811534, guid: 6f2e6f078004ef24494764873db6ad82,
+      type: 3}
+  - floor1: {fileID: 6952439759998671937, guid: 380b05c635b531c45991f5059d3e49b5,
+      type: 3}
+  - lake1: {fileID: 2045377012248318656, guid: b85f3b2d5a4c4544a8aa337c20244cb3, type: 3}
+  - lake2: {fileID: 4865640890174548119, guid: 327447fb40b59dd4e991063294f80bd4, type: 3}
+  - grass1: {fileID: 4579669428863020400, guid: 9286bd9c890f9d04084c603b5967f0c9,
+      type: 3}
+  - lakeBorder1: {fileID: 5334949904766873701, guid: 23ba8d0ca9f25f847a8b73b7c7cb0ded,
+      type: 3}
+  - lakeBorder2: {fileID: 7061946732132367228, guid: 266c1f8eae02a0b4b877e833fb76751f,
+      type: 3}
+  - lakeBorder3: {fileID: 1204183133120595456, guid: 80cb1c3fe567e3a40b5acb6137bbfe85,
+      type: 3}
+  - lakeBorder4: {fileID: 2958634498852453896, guid: 14a922667a0cf084ebe190084a7849a7,
+      type: 3}
+  - lakeBorder6: {fileID: 2983475648462372515, guid: 4535de4aa085f30418f7b5d26d9fe82e,
+      type: 3}
+  - lakeBorder7: {fileID: 2672361434089674083, guid: 478a36650208e104bb3e4425ba249774,
+      type: 3}
+  - lakeBorder8: {fileID: 5447551122851709378, guid: 0e0d8e67c1a89864481c66f2b559b3ef,
+      type: 3}
+  - lakeBorder9: {fileID: 5546455656013118003, guid: b23e6d958aee5b2449d96dce2b7d9de1,
+      type: 3}
+  - Canteen_floor: {instanceID: 0}
+  - table1: {instanceID: 0}
+  - table2: {instanceID: 0}
+  - table3: {instanceID: 0}
+  - table4: {instanceID: 0}
+  - stool: {instanceID: 0}
+  - bar1: {instanceID: 0}
+  - bar2: {instanceID: 0}
+  - bar3: {instanceID: 0}
+  - bar4: {instanceID: 0}
+  - bar5: {instanceID: 0}
+  - bar6: {instanceID: 0}
+  - sink1: {instanceID: 0}
+  - sink2: {instanceID: 0}
+  - sink3: {instanceID: 0}
+  - sink4: {instanceID: 0}
+  - wall: {instanceID: 0}
+  - chair: {instanceID: 0}
+  - cashRegister: {instanceID: 0}
+  - coffeeMachine1: {instanceID: 0}
+  - coffeeMachine2: {instanceID: 0}
+  - coffeeMachine3: {instanceID: 0}
+  - coffeeMachine4: {instanceID: 0}
+  - wall2: {instanceID: 0}
+  - computer: {instanceID: 0}
+  - blackBoard1: {instanceID: 0}
+  - blackBoard2: {instanceID: 0}
+  - blackBoard3: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
