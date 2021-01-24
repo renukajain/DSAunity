@@ -2,14 +2,21 @@
 using System.Collections;
 
     using System.Collections.Generic;        //Allows us to use Lists.
-
+    using UnityEngine.UI;
     public class GameManager : MonoBehaviour
     {
+
+
+        public float levelStartDelay = 2f;
 
         public static GameManager instance = null;                //Static instance of GameManager which allows it to be accessed by any other script.
         private BoardManager boardScript;                        //Store a reference to our BoardManager which will set up the level.
         private string level = "lake";                                    //Current level number, expressed in game as "Day 1".
         [HideInInspector] public bool playersTurn = true;
+
+        private Text LevelText;
+        private GameObject LevelImage;
+        private bool doingSetup;
 
     //Awake is always called before any Start functions
         void Awake()
