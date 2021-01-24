@@ -7,7 +7,11 @@ TagManager:
   - Food
   - Exit
   - Enemy
-  - Soda
+  - EETAC
+  - Teachers
+  - RESA
+  - Lake
+  - Canteen
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,19 @@ using UnityEngine.UI;    //Allows us to use UI.
 //Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
 public class Player : MovingObject
 {
+
+
+
+    public static Collider2D collider;
+    public void setCollider(Collider2D col) {
+        collider = col;
+    }
+    public Collider2D getCollider()
+    {
+        return collider;
+    }
+    //private GameManager gameManager;
+
     public float restartLevelDelay = 1f;        //Delay time in seconds to restart level.
     //public int pointsPerFood = 10;                //Number of points to add to player food points when picking up a food object.
     //public int pointsPerSoda = 20;                //Number of points to add to player food points when picking up a soda object.
@@ -170,47 +183,61 @@ public class Player : MovingObject
     //OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Check if the tag of the trigger collided with is Exit.
+        this.setCollider(other);
+
+        //Check if the tag of the trigger collided with is the one needed to change map
         if (other.tag == "Exit")
         {
-            //Invoke the Restart function to start the next level with a delay of restartLevelDelay (default 1 second).
-            //Invoke("Restart", restartLevelDelay);
-
-            //Disable the player object since level is over.
-            enabled = false;
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "campus";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
         }
-
-        //Check if the tag of the trigger collided with is Food.
-        else if (other.tag == "Food")
+        else if (other.tag == "EETAC")
         {
-            //Add pointsPerFood to the players current food total.
-            //food += pointsPerFood;
-
-            //Update foodText to represent current total and notify player that they gained points
-            //foodText.text = "+" + pointsPerFood + " Food: " + food;
-
-            //Call the RandomizeSfx function of SoundManager and pass in two eating sounds to choose between to play the eating sound effect.
-            //SoundManager.instance.RandomizeSfx(eatSound1, eatSound2);
-
-            //Disable the food object the player collided with.
-            other.gameObject.SetActive(false);
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "eetac";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
         }
-
-        //Check if the tag of the trigger collided with is Soda.
-        else if (other.tag == "Soda")
+        else if (other.tag == "Teachers")
         {
-            //Add pointsPerSoda to players food points total
-            //food += pointsPerSoda;
-
-            //Update foodText to represent current total and notify player that they gained points
-            //foodText.text = "+" + pointsPerSoda + " Food: " + food;
-
-            //Call the RandomizeSfx function of SoundManager and pass in two drinking sounds to choose between to play the drinking sound effect.
-            //SoundManager.instance.RandomizeSfx(drinkSound1, drinkSound2);
-
-            //Disable the soda object the player collided with.
-            other.gameObject.SetActive(false);
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "office";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
         }
+        else if (other.tag == "RESA")
+        {
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "resa";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
+        }
+        else if (other.tag == "Lake")
+        {
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "lake";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
+        }
+        else if (other.tag == "Canteen")
+        {
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "canteen";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
+        }
+        else
+        {
+            GameObject gm = GameObject.FindWithTag("GameController");
+            gm.GetComponent<GameManager>().level = "campus";
+            Invoke("Restart", restartLevelDelay);
+            enabled = false;//Disable the player object since level is over.
+        }
+
+
+
     }
 
 

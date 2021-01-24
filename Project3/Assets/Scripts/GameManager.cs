@@ -5,18 +5,17 @@ using System.Collections;
     using UnityEngine.UI;
     public class GameManager : MonoBehaviour
     {
-
-
+        private Player player;
+        public static Collider2D col;
         public float levelStartDelay = 2f;
 
         public static GameManager instance = null;                //Static instance of GameManager which allows it to be accessed by any other script.
         private BoardManager boardScript;                        //Store a reference to our BoardManager which will set up the level.
-        private string level = "lake";                                    //Current level number, expressed in game as "Day 1".
+        public string level = "campus";                                    //Current level number, expressed in game as "Day 1".
         [HideInInspector] public bool playersTurn = true;
 
         private Text LevelText;
         private GameObject LevelImage;
-        private bool doingSetup;
 
     //Awake is always called before any Start functions
         void Awake()
@@ -44,8 +43,13 @@ using System.Collections;
             InitGame();
         }
 
-        //Initializes the game for each level.
-        void InitGame()
+
+    void OnLevelWasLoaded()
+    {      
+        InitGame();
+    }
+    //Initializes the game for each level.
+    void InitGame()
         {
             //Call the SetupScene function of the BoardManager script, pass it current level number.
             boardScript.SetupScene(level);

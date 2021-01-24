@@ -20,15 +20,17 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public int columns;
-    public int rows;
+    private int columns;
+    private int rows;
 
     public Count foodCount = new Count(10, 20);
+
     public GameObject turtle;
     public GameObject residence; //r
     public GameObject cofeeBuilding; //q
     public GameObject eetacBuilding; //u
-    public GameObject exitTile; //e
+    public GameObject teacherBuilding; //e
+    public GameObject laketile; //lk
 
     public GameObject floor1; //f
     public GameObject lake1; //l
@@ -42,34 +44,30 @@ public class BoardManager : MonoBehaviour
     public GameObject lakeBorder7; //x
     public GameObject lakeBorder8; //c
     public GameObject lakeBorder9; //v
-    public GameObject Canteen_floor; //cf
-    public GameObject table1; //t1
-    public GameObject table2; //t2
-    public GameObject table3; //t3
-    public GameObject table4; //t4
-    public GameObject stool; //st
-    public GameObject bar1; //b1
-    public GameObject bar2; //b2
-    public GameObject bar3; //b3
-    public GameObject bar4; //b4
-    public GameObject bar5; //b5
-    public GameObject bar6; //b6
-    public GameObject sink1; //si1
-    public GameObject sink2; //si2
-    public GameObject sink3; //si3
-    public GameObject sink4; //si4
+    public GameObject Canteen_floor; //C
+    public GameObject table1; //1
+    public GameObject table2; //2
+    public GameObject table3; //3
+    public GameObject table4; //4
+    public GameObject stool; //s
+    public GameObject bar1; //@
+    public GameObject bar2; //#
+    public GameObject bar3; //%
+    public GameObject bar4; //~
+    public GameObject bar5; //&
+    public GameObject bar6; //(
+    public GameObject sink1; //5
+    public GameObject sink2; //6
+    public GameObject sink3; //7
+    public GameObject sink4; //8
     public GameObject wall; //w
-    public GameObject chair; //ch
-    public GameObject cashRegister; //cr
-    public GameObject coffeeMachine1; //cm1
-    public GameObject coffeeMachine2; //cm2
-    public GameObject coffeeMachine3; //cm3
-    public GameObject coffeeMachine4; //cm4
-    public GameObject wall2; //w2
-    public GameObject computer; //co
-    public GameObject blackBoard1; //bb1
-    public GameObject blackBoard2; //bb2
-    public GameObject blackBoard3; //bb3
+    public GameObject chair; //S
+    public GameObject cashRegister; //R
+    public GameObject wall2; //W
+    public GameObject computer; //O
+    public GameObject blackBoard1; //K
+    public GameObject blackBoard2; //L
+    public GameObject blackBoard3; //Ñ
     public GameObject grass_wall; //gw
     public GameObject EETAC1; //e1
     public GameObject EETAC2; //e2
@@ -98,95 +96,6 @@ public class BoardManager : MonoBehaviour
 
     private List <Vector3> gridPositions = new List <Vector3> ();    //A list of possible locations to place tiles.
     /*
-    private string[,] resa = new string[41, 11]
-    {
-                                                { "no","no","no","no","no","no","no","e1","w2","w2","w2"},
-                                                { "no","no","no","no","no","no","no", "f", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e7", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e9", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e7", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e9", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","ed", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","w2","w2","w2","w2"}
-    };
-    private string[,] eetac = new string[41, 11] 
-    {
-                                                { "no","no","no","no","no","no","no","e1","w2","w2","w2"},
-                                                { "no","no","no","no","no","no","no","ed", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e7", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e9", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e7", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e8", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","e9", "f", "f","w2"},
-                                                { "e1","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "e2", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e3", "f", "f", "f", "f", "f", "f", "f", "f", "f","w2"},
-                                                { "e7","w2","w2","w2","w2", "f", "w","w2", "f", "f","w2"},
-                                                { "e8", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t2", "f","t2", "f", "f","w2", "f", "f","w2"},
-                                                { "e8", "f","t4", "f","t4", "f", "f","w2", "f", "f","w2"},
-                                                { "e9", "f", "f", "f", "f", "f", "f","w2", "f", "f","w2"},
-                                                { "e4","w2","w2","w2","w2","w2","w2","w2", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","ed", "f", "f","w2"},
-                                                { "no","no","no","no","no","no","no","w2","w2","w2","w2"}
-
-    };
     private string[,] map = new string[32, 15] 
     {
                                                 {"f","f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f","f","f","f"},
@@ -222,84 +131,59 @@ public class BoardManager : MonoBehaviour
                                                 {"f","f","e3","e3","e3","e3","c2","c4","c4","c8","c4","c8","f","f","f"},
                                                 {"f","f","e4","e6","e6","e6","c5","c6","c6","c7","c6","c7","f","f","f"}
     };
-
-    private string[,] lake = new string[20, 11] {   {"gw","gw","gw","gw","gw","gw","gw","gw","gw","gw","gw"},
-                                                    {"gw","f", "f", "f", "f", "f", "f", "f", "f", "f", "f"},
-                                                    {"gw","f", "g", "g", "g", "g", "g", "g", "g", "g", "f"},
-                                                    {"gw","f", "g", "x", "k", "k", "k", "k", "i", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "z", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "z", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "l", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "c", "l", "l", "z", "l", "o", "g", "f"},
-                                                    {"gw","f", "g", "v", "n", "n", "n", "n", "p", "g", "f"},
-                                                    {"gw","f", "g", "g", "g", "g", "g", "g", "g", "g", "f"},
-                                                    {"gw","f", "f", "f", "f", "f", "f", "f", "f", "f", "f"},
-                                                    {"gw","gw","gw","gw","gw","gw","gw","gw","gw","gw","gw"}};
-
-    private string[,] canteen = new string[20,11] { {"w2","w2","w2","w2","w2","w2","w2","w2","w2","w2","w2"},
-                                                    {"w2","cf","cf","cf","cf","cf","cf","cf","cf","cf", "w"},
-                                                    {"w2","cf","st","t2","t1","cf","cf","st","t2","t1", "w"},
-                                                    {"w2","cf","st","t4","t3","cf","cf","st","t4","t3", "w"},
-                                                    {"w2","cf","cf","st","st","cf","cf","cf","st","st", "w"},
-                                                    {"w2","cf","cf","cf","cf","cf","cf","cf","cf","cf", "w"},
-                                                    {"w2","cf","st","t2","t1","cf","cf","st","t2","t1", "w"},
-                                                    {"w2","cf","st","t4","t3","cf","cf","st","t4","t3", "w"},
-                                                    {"w2","cf","cf","st","st","cf","cf","cf","st","st", "w"},
-                                                    {"w2","cf","cf","cf","cf","cf","cf","cf","cf","cf", "w"},
-                                                    {"w2","cf","st","t2","cf","cf","st","cf","st","cf", "w"},
-                                                    {"w2","cf","st","t4","cf","b4","b3","cr","b2","b2","b1"},
-                                                    {"w2","cf","cf","st","cf","b6","b5","cf","cf","si2","si1"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","si4","si3"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","si2","si1"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","si4","si3"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","cm2","cm1"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","cm4","cm3"},
-                                                    {"w2","cf","cf","cf","cf","b6","b5","cf","cf","cf", "w"},
-                                                    {"w2","w2","w2","w2","w2","w2","w2","w2","w2","w2","w2"} 
-    };
-
-    private string[,] office = new string[19,12] {  {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"},
-						                            {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
-						                            {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
-                        			                {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
-						                            {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
-                        			                {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                        			                {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
-                                                    {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
-                                                    {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf", "bb2"},
-                                                    {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
-                                                    {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
-                                                    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                                                    {"w2", "w2", "w2", "w2", "w", "cf", "cf", "w", "w2", "w2", "w2", "w"},
-                                                    {"w2", "cf", "ch", "cf", "bb1", "cf", "cf", "w", "cf", "ch", "cf", "bb1"},
-                                                    {"w2", "st", "co", "cf", "bb2", "cf", "cf", "w", "st", "co", "cf","bb2"},
-                                                    {"w2", "st", "t4", "cf", "bb3", "cf", "cf", "w", "st", "t4", "cf", "bb3"},
-                                                    {"w2", "cf", "cf", "cf", "w", "cf", "cf", "w", "cf", "cf", "cf", "w"},
-                                                    {"w2", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "cf", "w"},
-                                                    {"w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2", "w2"}
-    };
     */
 
     public static string eetac = "11-41\n"
-                + "w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2-w2\n"
-                + "w2-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-w2\n"
-                + "w2-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-w2\n"
-                + "e1-ed-w2-f-f-w2-w2-w2-w2-w2-w2-e7-e8-e8-e8-e9-w2-f-f-w2-w2-w2-w2-w2-w2-e7-e8-e8-e8-e9-w2-f-f-w2-w2-w2-w2-w2-w2-ed-e4\n"
-                + "no-no-w2-f-f-w-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w-f-f-f-f-w2-no-no-no-no-no-no-no\n"
-                + "no-no-w2-f-f-f-f-f-f-f-w2-no-no-no-no-no-w2-f-f-f-f-f-f-f-w2-no-no-no-no-no-w2-f-f-f-f-f-f-f-w2-no-no-no-no-no-no-no\n"
-                + "no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-no-no\n"
-                + "no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-no-no\n"
-                + "no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-w2-f-f-w2-f-t2-t4-f-w2-no-no-no-no-no-no-no\n"
-                + "no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-w2-f-f-w2-f-f-f-f-w2-no-no-no-no-no-no-no\n"
+                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n"
+                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
+                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
+                + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4\n"
+                + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
                 + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no\n";
+
+    public static string resa = "11-41\n"
+                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n"
+                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
+                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
+                + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4\n"
+                + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
+                + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no\n";
+
+    private string canteen = "10-18\n"
+    + "w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w\n"
+    + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-w\n"
+    + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C\n"
+    + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C\n"
+    + "C-C-C-C-C-C-C-C-C-S-%-C-C-C-C-C-C-C\n"
+    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(\n"
+    + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C\n"
+    + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C\n"
+    + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C\n"
+    + "C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C\n";
+
+    private string office = "12-19\n"
+    + "W-K-L-Ñ-w-w-w-K-L-Ñ-w-w-w-K-L-Ñ-w-w-W\n"
+    + "W-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\n"
+    + "W-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\n"
+    + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\n"
+    + "W-w-w-w-w-C-w-w-w-w-w-C-w-w-w-w-w-C-W\n"
+    + "ed-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\n"
+    + "ed-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\n"
+    + "W-K-L-Ñ-w-C-w-K-L-Ñ-w-C-w-K-L-Ñ-w-C-W\n"
+    + "W-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\n"
+    + "W-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\n"
+    + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\n"
+    + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n";
 
     public static string lake = "10-18\n"
         + "ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f\n"
@@ -313,21 +197,21 @@ public class BoardManager : MonoBehaviour
         + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f\n"
         + "f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f";
 
-    public static string campus = "14 18\n"
-        + "g g g g g g g g g g g g g g g g g g\n"
-        + "g f f f f f f f f f f f f f f f f g\n"
-        + "g f f f f f f f f f f f f f f f f g\n"
-        + "g f g g g g g g f f g g g g g g f g\n"
-        + "g f g ed 1 1 f f f f f f ed 1 1 g f g\n"
-        + "g f g 1 1 1 f f f f f f 1 1 1 g f g\n"
-        + "g f g g g g g g f f g g g g g g f g\n"
-        + "g f g ed 1 1 f f f f g g g g g g g g\n"
-        + "g f g 1 1 1 f f f f g g i o p g g g\n"
-        + "g f g 1 1 1 f f f f g g k z n g g g\n"
-        + "g f g g g g g g f f g g x c v g g g\n"
-        + "g f f f f f f f f f g g g g g g g g\n"
-        + "g f f f f f f f f f f f f f f f f g\n"
-        + "g g g g g g g g g g g g g g g g g g\n";
+    public static string campus = "14-18\n"
+        + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g\n"
+        + "g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g\n"
+        + "g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g\n"
+        + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g\n"
+        + "g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g\n"
+        + "g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g\n"
+        + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g\n"
+        + "g-f-g-e-1-1-f-f-f-f-g-g-g-g-g-g-g-g\n"
+        + "g-f-g-1-1-1-f-f-f-f-g-g-i-o-p-g-g-g\n"
+        + "g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g\n"
+        + "g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g\n"
+        + "g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g\n"
+        + "g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g\n"
+        + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g\n";
     void LayoutObjectAtRandom(GameObject tileArray, int minimum, int maximum)
     {
         //Choose a random number of objects to instantiate within the minimum and maximum limits
@@ -368,38 +252,28 @@ public class BoardManager : MonoBehaviour
     {
         
 
-        /*
-        string str;
-        level = "resa";
         
+        gridPositions.Clear();
+        string[] map;
         switch (level)
         {
             case "lake":
-                rows = lake.GetLength(1); columns = lake.GetLength(0); break;
-            case "office":
-                rows = office.GetLength(1); columns = office.GetLength(0); break;
-            case "canteen":
-                rows = canteen.GetLength(1); columns = canteen.GetLength(0); break;
-            case "map":
-                rows = map.GetLength(1); columns = map.GetLength(0); break;
+                map = lake.Split('\n'); break;
             case "eetac":
-                rows = eetac.GetLength(1); columns = eetac.GetLength(0); break;
+                map = eetac.Split('\n'); break;
             case "resa":
-                rows = resa.GetLength(1); columns = resa.GetLength(0); break;
+                map = resa.Split('\n'); break;
+            case "canteen":
+                map = canteen.Split('\n'); break;
+            case "office":
+                map = office.Split('\n'); break;
             default:
-                rows = lake.GetLength(1); columns = lake.GetLength(0); break;
+                map = campus.Split('\n'); break;
         }
-        
-        for (int x = 0; x < columns; x++)
-        {
-            for(int y = 0; y < rows; y++)
-            {
-        */
-        gridPositions.Clear();
-        string[] map = lake.Split('\n');
+
         string[] d = map[0].Split('-');
-        int columns = Int32.Parse(d[1]);
-        int rows = Int32.Parse(d[0]);
+        columns = Int32.Parse(d[1]);
+        rows = Int32.Parse(d[0]);
         for (int y = 1; y < rows + 1; y++)
         {
             int m = rows - y;
@@ -409,27 +283,7 @@ public class BoardManager : MonoBehaviour
             {
                 switch (p[x])
                 {
-                    /*
-                    switch (level) 
-                    {
-                        case "lake":
-                            str = lake[x, y];  break;
-                        case "office":
-                            str = office[x, y];  break;
-                        case "canteen":
-                            str = canteen[x, y];  break;
-                        case "map":
-                            str = map[x, y]; break;
-                        case "eetac":
-                            str = eetac[x, y]; break;
-                        case "resa":
-                            str = resa[x, y]; break;
-                        default:
-                            str = lake[x, y];  break;
-                    }
-
-                    switch (str)
-                    {*/
+                    
 
                     case "i":
                         Instantiate(lakeBorder1, new Vector3(x, m, 0f), Quaternion.identity); break;
@@ -455,63 +309,58 @@ public class BoardManager : MonoBehaviour
                         Instantiate(lake2, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "g":
                         Instantiate(grass1, new Vector3(x, m, 0f), Quaternion.identity);
-                        gridPositions.Add(new Vector3(x, m, 0f)); //To after add turtles randomly in map
+                        if (level == "lake")
+                        {
+                            gridPositions.Add(new Vector3(x, m, 0f));
+                        } //To after add turtles randomly in map
                         break;
-                    case "cf":
+                    case "C":
                         Instantiate(Canteen_floor, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "t1":
+                    case "1":
                         Instantiate(table1, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "t2":
+                    case "2":
                         Instantiate(table2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "t3":
+                    case "3":
                         Instantiate(table3, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "t4":
+                    case "4":
                         Instantiate(table4, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "st":
+                    case "s":
                         Instantiate(stool, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b1":
+                    case "@":
                         Instantiate(bar1, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b2":
+                    case "#":
                         Instantiate(bar2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b3":
+                    case "%":
                         Instantiate(bar3, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b4":
+                    case "~":
                         Instantiate(bar4, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b5":
+                    case "&":
                         Instantiate(bar5, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "b6":
+                    case "(":
                         Instantiate(bar6, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "si1":
+                    case "5":
                         Instantiate(sink1, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "si2":
+                    case "6":
                         Instantiate(sink2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "si3":
+                    case "7":
                         Instantiate(sink3, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "si4":
+                    case "8":
                         Instantiate(sink4, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "w":
                         Instantiate(wall, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "ch":
+                    case "S":
                         Instantiate(chair, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "cr":
+                    case "R":
                         Instantiate(cashRegister, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "cm1":
-                        Instantiate(coffeeMachine1, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "cm2":
-                        Instantiate(coffeeMachine2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "cm3":
-                        Instantiate(coffeeMachine3, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "cm4":
-                        Instantiate(coffeeMachine4, new Vector3(x, m, 0f), Quaternion.identity); break;
-		            case "w2":
+		            case "W":
                         Instantiate(wall2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "co":
+                    case "O":
                         Instantiate(computer, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "bb1":
+                    case "K":
                         Instantiate(blackBoard1, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "bb2":
+                    case "L":
                         Instantiate(blackBoard2, new Vector3(x, m, 0f), Quaternion.identity); break;
-                    case "bb3":
+                    case "Ñ":
                         Instantiate(blackBoard3, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "gw":
                         Instantiate(grass_wall, new Vector3(x, m, 0f), Quaternion.identity); break;
@@ -553,11 +402,22 @@ public class BoardManager : MonoBehaviour
                         Instantiate(EETAC_C8, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "c9":
                         Instantiate(EETAC_C9, new Vector3(x, m, 0f), Quaternion.identity); break;
+                    case "u":
+                        Instantiate(eetacBuilding, new Vector3(x, m, 0f), Quaternion.identity); break;
+                    case "e":
+                        Instantiate(teacherBuilding, new Vector3(x, m, 0f), Quaternion.identity); break;
+                    case "r":
+                        Instantiate(residence, new Vector3(x, m, 0f), Quaternion.identity); break;
+                    case "lk":
+                        Instantiate(laketile, new Vector3(x, m, 0f), Quaternion.identity); break;
+                    case "q":
+                        Instantiate(cofeeBuilding, new Vector3(x, m, 0f), Quaternion.identity); break;
                     default:
-                        //str = ""; 
                         break;
                 }
-	        }
+
+
+            }
         }
         LayoutObjectAtRandom(turtle, 5, 10);
     }

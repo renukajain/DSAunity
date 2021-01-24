@@ -4,10 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4011094884121121764
-    second: "Game Boy Advance - Pok\xE9mon FireRed _ LeafGreen - Buildings SPRITES_0"
+    second: EETAC
   - first:
       213: -6157665111647827690
-    second: "Game Boy Advance - Pok\xE9mon FireRed _ LeafGreen - Buildings SPRITES_1"
+    second: EETAC_TEACHERS
+  - first:
+      213: 1076453384209547691
+    second: RESA
+  - first:
+      213: 5123356029577233759
+    second: Canteen
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +109,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EETAC
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 109
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.16, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ce29f547ab558c0800000000000000
+      internalID: -4011094884121121764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EETAC_TEACHERS
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 316
+        width: 96
+        height: 64
+      alignment: 9
+      pivot: {x: 0.16, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6194a66a4349b8aa0800000000000000
+      internalID: -6157665111647827690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RESA
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 424
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1c31f46a450fe00800000000000000
+      internalID: 1076453384209547691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canteen
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 111
+        width: 64
+        height: 63
+      alignment: 9
+      pivot: {x: 0.25, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558ec80a21d91740800000000000000
+      internalID: 5123356029577233759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
