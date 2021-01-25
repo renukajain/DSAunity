@@ -1,14 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;    //Allows us to use UI.
+using UnityEngine.UI;                    //Allows us to use UI.
+
 
 //Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
 public class Player : MovingObject
 {
 
-
-
+    public float dialogueTime = 3f;
     public static Collider2D collider;
+
+   // public Text dialogueText;
+    public Text scoreText;
+    //public GameObject dialogueImage;
+
     public void setCollider(Collider2D col) {
         collider = col;
     }
@@ -30,6 +36,27 @@ public class Player : MovingObject
     //public AudioClip drinkSound1;                //1 of 2 Audio clips to play when player collects a soda object.
     //public AudioClip drinkSound2;                //2 of 2 Audio clips to play when player collects a soda object.
     //public AudioClip gameOverSound;                //Audio clip to play when player dies.
+    public int turtle = 0;
+    public int coffee = 0;
+    public int redBull = 0;
+    public int pills = 0;
+    public int calculator = 0;
+    public int rule = 0;
+    public int compass = 0;
+    public int pencil = 0;
+    public int glasses = 0;
+    public int usb = 0;
+    public int book = 0;
+    public int puzzle = 0;
+    public int cheat = 0;
+
+    public bool cal = false;
+    public bool ele = false;
+    public bool com = false;
+    public bool oes = false;
+    public bool dsa = false;
+    public bool aero = false;
+    public bool tfg = false;
 
     private Animator animator;                    //Used to store a reference to the Player's animator component.
     //private int food;                            //Used to store player food points total during level.
@@ -41,6 +68,7 @@ public class Player : MovingObject
     {
         //Get a component reference to the Player's animator component
         animator = GetComponent<Animator>();
+        scoreText.text ="Turtle: " + turtle;
 
         //Get the current food point total stored in GameManager.instance between levels.
         //food = GameManager.instance.playerFoodPoints;
@@ -179,6 +207,13 @@ public class Player : MovingObject
         animator.SetTrigger("playerChop");
     }
 
+    /*void HideLevelImage()
+    {
+        dialogueTime.SetActive(false);
+        //doingSetup = false;
+    }
+    */
+
 
     //OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
     private void OnTriggerEnter2D(Collider2D other)
@@ -186,7 +221,108 @@ public class Player : MovingObject
         this.setCollider(other);
 
         //Check if the tag of the trigger collided with is the one needed to change map
-        if (other.tag == "Exit")
+        if (other.tag == "Turtle"){
+            turtle++;
+            other.gameObject.SetActive (false);
+           // dialogueImage = GameObject.Find("DialogueImage");
+           // dialogueText = GameObject.Find("DialogueImage").GetComponent<Text>();
+           // dialogueText.text = "Hola te doy un cafe";
+            //dialogueTime.SetActive(true);
+            //Invoke("HideLevelImage", dialogueTime);
+        }
+        else if (other.tag == "Coffee"){
+            coffee++;
+        }
+        else if (other.tag == "Calculator")
+            calculator++;
+        else if (other.tag == "RedBull")
+            redBull++;
+        else if (other.tag == "Pills")
+            pills++;
+        else if (other.tag == "Rule"){
+            rule++;
+        }
+        else if (other.tag == "Compass")
+            compass++;
+        else if (other.tag == "Pencil")
+            pencil++;
+        else if (other.tag == "Glasses")
+            glasses++;
+        else if (other.tag == "Usb")
+            usb++;
+        else if (other.tag == "Book")
+            book++;
+        else if (other.tag == "Puzzle")
+            puzzle++;
+        else if (other.tag == "Cheat")
+            cheat++;
+        else if (other.tag == "CAL"){
+            if(calculator >= 4 && pencil >= 2 && rule >= 1){
+                cal=true;
+                calculator-= 4;
+                pencil -= 2;
+                rule -=1;
+            }
+        }
+        else if (other.tag == "ELE"){
+            if(pills == 3 && glasses >= 1 && usb >= 1 && calculator>=1){
+               ele=true;
+               pills-=3;
+               glasses-=1;
+               usb-=1;
+            }
+        }
+        else if (other.tag == "COM"){
+            if(coffee>=2 && cheat>=1&&compass>=4){
+                com=true;
+                coffee-=2;
+                cheat-=1;
+                compass-=4;
+            }
+        }
+        else if (other.tag == "OESC"){
+            if(redBull>=2&&calculator>=2&&pills>=1&&usb>=4){
+                oes=true;
+                redBull-=2;
+                calculator-=2;
+                pills-=1;
+                usb-=4;
+            }
+        }
+        else if (other.tag == "DSA"){
+            if(turtle>=1&&coffee>=3&&redBull>=1&&usb>=3&&glasses>=1){
+                dsa=true;
+                turtle-=1;
+                coffee-=3;
+                redBull-=1;
+                usb-=3;
+                glasses-=1;
+            }
+        }
+        else if (other.tag == "AERO"){
+            if(compass>=1&&rule>=1&&calculator>=1&&redBull>=3&&puzzle>=4&&cheat>=2){
+                aero=true;
+                compass-=1;
+                rule-=1;
+                calculator-=1;
+                redBull-=3;
+                puzzle-=4;
+                cheat-=2;
+            }
+
+        }
+        else if (other.tag == "TFG"){
+            if(redBull>=3&&coffee>=2&glasses>=1&&puzzle>=1&&book>=5&&calculator>=1){
+                tfg= true;
+                redBull-=3;
+                coffee-=2;
+                glasses-=1;
+                puzzle-=1;
+                book-=5;
+                calculator-=1;
+            }
+        }
+        else if (other.tag == "Exit")
         {
             GameObject gm = GameObject.FindWithTag("GameController");
             gm.GetComponent<GameManager>().level = "campus";
@@ -236,6 +372,7 @@ public class Player : MovingObject
             enabled = false;//Disable the player object since level is over.
         }
 
+        scoreText.text ="Turtle:" + turtle + " Coffee:"+ coffee + " RedBull:"+redBull+" Pills:"+pills+" Calculator:"+calculator+" Rule:"+rule+" Compass:"+compass+" Pencil:"+pencil+" Glasses"+glasses+" Usb:"+usb+" Book:"+book+" Puzzle:"+puzzle+" Cheat:"+cheat;
 
 
     }

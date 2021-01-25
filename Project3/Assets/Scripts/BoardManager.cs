@@ -25,7 +25,7 @@ public class BoardManager : MonoBehaviour
 
     public Count foodCount = new Count(10, 20);
 
-    public GameObject turtle;
+    public GameObject[] turtle;
     public GameObject residence; //r
     public GameObject cofeeBuilding; //q
     public GameObject eetacBuilding; //u
@@ -88,6 +88,16 @@ public class BoardManager : MonoBehaviour
     public GameObject EETAC_C7; //c7
     public GameObject EETAC_C8; //c8
     public GameObject EETAC_C9; //c9
+    public GameObject[] Students;
+    public GameObject shop;
+    public GameObject Cal;
+    public GameObject Ele;
+    public GameObject Com;
+    public GameObject Oesc;
+    public GameObject Dsa;
+    public GameObject Aero;
+    public GameObject Tfg;
+    public GameObject Black;
 
 
 
@@ -159,19 +169,19 @@ public class BoardManager : MonoBehaviour
                 + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
                 + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no\n";
 
-    private string canteen = "10-18\n"
+    public string canteen = "10-18\n"
     + "w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w\n"
-    + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-w\n"
+    + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C\n"
     + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C\n"
     + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-S-%-C-C-C-C-C-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(\n"
+    + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-C-C\n"
+    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-C-C\n"
     + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C\n"
     + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C\n"
     + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C\n"
     + "C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C\n";
 
-    private string office = "12-19\n"
+    public string office = "12-19\n"
     + "W-K-L-Ñ-w-w-w-K-L-Ñ-w-w-w-K-L-Ñ-w-w-W\n"
     + "W-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\n"
     + "W-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\n"
@@ -212,7 +222,8 @@ public class BoardManager : MonoBehaviour
         + "g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g\n"
         + "g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g\n"
         + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g\n";
-    void LayoutObjectAtRandom(GameObject tileArray, int minimum, int maximum)
+
+    void LayoutObjectAtRandom(GameObject[] tileArray, int minimum, int maximum)
     {
         //Choose a random number of objects to instantiate within the minimum and maximum limits
         int objectCount = Random.Range(minimum, maximum + 1);
@@ -224,7 +235,7 @@ public class BoardManager : MonoBehaviour
             Vector3 randomPosition = RandomPosition();
 
             //Choose a random tile from tileArray and assign it to tileChoice
-            GameObject tileChoice = tileArray;
+            GameObject tileChoice = tileArray[Random.Range (0, tileArray.Length)];
 
             //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
             Instantiate(tileChoice, randomPosition, Quaternion.identity);
@@ -250,9 +261,8 @@ public class BoardManager : MonoBehaviour
     //SetupScene initializes our level and calls the previous functions to lay out the game board
     public void SetupScene (string level)
     {
-        
+        level = "office";
 
-        
         gridPositions.Clear();
         string[] map;
         switch (level)
@@ -274,6 +284,9 @@ public class BoardManager : MonoBehaviour
         string[] d = map[0].Split('-');
         columns = Int32.Parse(d[1]);
         rows = Int32.Parse(d[0]);
+
+
+
         for (int y = 1; y < rows + 1; y++)
         {
             int m = rows - y;
@@ -281,10 +294,9 @@ public class BoardManager : MonoBehaviour
             string[] p = line.Split('-');
             for (int x = 0; x < columns; x++)
             {
+
                 switch (p[x])
                 {
-                    
-
                     case "i":
                         Instantiate(lakeBorder1, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "o":
@@ -302,20 +314,21 @@ public class BoardManager : MonoBehaviour
                     case "v":
                         Instantiate(lakeBorder9, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "f":
-                        Instantiate(floor1, new Vector3(x, m, 0f), Quaternion.identity); break;
+                        Instantiate(floor1, new Vector3(x, m, 0f), Quaternion.identity);
+                        gridPositions.Add(new Vector3(x, m, 0f)); //To after add turtles randomly in map
+                        break;
                     case "l":
                         Instantiate(lake1, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "z":
                         Instantiate(lake2, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "g":
                         Instantiate(grass1, new Vector3(x, m, 0f), Quaternion.identity);
-                        if (level == "lake")
-                        {
-                            gridPositions.Add(new Vector3(x, m, 0f));
-                        } //To after add turtles randomly in map
+                        gridPositions.Add(new Vector3(x, m, 0f)); //To after add turtles randomly in map
                         break;
                     case "C":
-                        Instantiate(Canteen_floor, new Vector3(x, m, 0f), Quaternion.identity); break;
+                        Instantiate(Canteen_floor, new Vector3(x, m, 0f), Quaternion.identity);
+                        gridPositions.Add(new Vector3(x, m, 0f)); //To after add turtles randomly in map
+                        break;
                     case "1":
                         Instantiate(table1, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "2":
@@ -415,10 +428,21 @@ public class BoardManager : MonoBehaviour
                     default:
                         break;
                 }
-
-
             }
         }
-        LayoutObjectAtRandom(turtle, 5, 10);
+        if (level=="lake")
+            LayoutObjectAtRandom(turtle, 1, 5);
+        else if (level=="canteen")
+            Instantiate(shop, new Vector3(3, 8, 0f), Quaternion.identity);
+        else if (level=="office"){
+            Instantiate(Cal, new Vector3(1, 3, 0f), Quaternion.identity);
+            Instantiate(Ele, new Vector3(7, 3, 0f), Quaternion.identity);
+            Instantiate(Com, new Vector3(13, 3, 0f), Quaternion.identity);
+            Instantiate(Oesc, new Vector3(1, 10, 0f), Quaternion.identity);
+            Instantiate(Dsa, new Vector3(7, 10, 0f), Quaternion.identity);
+            Instantiate(Aero, new Vector3(13,10, 0f), Quaternion.identity);
+            Instantiate(Tfg, new Vector3(8, 5, 0f), Quaternion.identity);
+        }
+        LayoutObjectAtRandom(Students, 3, 6);
     }
 }

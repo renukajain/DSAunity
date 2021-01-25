@@ -12,6 +12,27 @@ TagManager:
   - RESA
   - Lake
   - Canteen
+  - Turtle
+  - Coffee
+  - RedBull
+  - Pills
+  - Calculator
+  - Rule
+  - Compass
+  - Pencil
+  - Glasses
+  - Usb
+  - Book
+  - Puzzle
+  - Cheat
+  - CAL
+  - ELE
+  - COM
+  - OESC
+  - DSA
+  - AERO
+  - TFG
+  - Shop
   layers:
   - Default
   - TransparentFX
