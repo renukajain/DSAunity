@@ -174,8 +174,8 @@ public class BoardManager : MonoBehaviour
     + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C\n"
     + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C\n"
     + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-C-C\n"
+    + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&\n"
+    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(\n"
     + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C\n"
     + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C\n"
     + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C\n"
@@ -261,8 +261,6 @@ public class BoardManager : MonoBehaviour
     //SetupScene initializes our level and calls the previous functions to lay out the game board
     public void SetupScene (string level)
     {
-        level = "office";
-
         gridPositions.Clear();
         string[] map;
         switch (level)

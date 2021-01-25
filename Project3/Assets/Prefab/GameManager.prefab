@@ -47,7 +47,10 @@ MonoBehaviour:
   foodCount:
     minimum: 20
     maximum: 10
-  turtle: {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
+  turtle:
+  - {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
+  - {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
+  - {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
   residence: {fileID: 4781497977237445743, guid: 4d2f5cfeefb0c95479c629e2b82e4c82,
     type: 3}
   cofeeBuilding: {fileID: 4159419768897038284, guid: 70c97cb97dc9a5246934277d06da318f,
@@ -99,14 +102,6 @@ MonoBehaviour:
   chair: {fileID: 7296605324086076728, guid: 2c6b58927f6a83940a0ff1a319393b6e, type: 3}
   cashRegister: {fileID: 7611533712391963553, guid: 1b645355a6d75834e9060a6b20976597,
     type: 3}
-  coffeeMachine1: {fileID: 935688432833238184, guid: e93b7543dad0b0c43ad4c7e3bd6b955f,
-    type: 3}
-  coffeeMachine2: {fileID: 9097790491867160595, guid: c08675bf22ea65e4abc4090c4f91bc3a,
-    type: 3}
-  coffeeMachine3: {fileID: 7791392720925559230, guid: 12461ffc5c33e2245b273debf2b334c2,
-    type: 3}
-  coffeeMachine4: {fileID: 7819163748188852813, guid: 2ffb606e9f5488344b4b872909f256ac,
-    type: 3}
   wall2: {fileID: 5139114816060140241, guid: 2f17b076f272e9f4c9f98aeced27e2cf, type: 3}
   computer: {fileID: 462653341258769943, guid: b187b44aeefa9164c8032d0d8c28c42a, type: 3}
   blackBoard1: {fileID: 6909677647524594491, guid: a91c6d7228ce6674fbb8882fb729586a,
@@ -145,6 +140,52 @@ MonoBehaviour:
     type: 3}
   EETAC_C9: {fileID: 4198561269587295381, guid: 4fb6fd8def30bf1479fffe2e76a2f907,
     type: 3}
+  Students:
+  - {fileID: 5352656744953902481, guid: 60bee2c7f7fa2aa40b88a528708dc356, type: 3}
+  - {fileID: 7558623171311985120, guid: 426178f0971bb7d41901538c09cda236, type: 3}
+  - {fileID: 5419956863411268685, guid: bc6edfec8828b3946a93d134313b492e, type: 3}
+  - {fileID: 4922088048100335419, guid: c1f6696ab4aafe44d8da3b0b417ea96b, type: 3}
+  - {fileID: 5040889290217572307, guid: bcbd35d58fecf4644b2d1f2e2ef9336d, type: 3}
+  - {fileID: 645931276103883485, guid: 901397d4aa430d547a41fb8f130e07e4, type: 3}
+  - {fileID: 1287399203067715056, guid: fb326b9c32176cd44849170fb9575cfe, type: 3}
+  - {fileID: 6391874849624950992, guid: 629da008face6854a90cf45af6481717, type: 3}
+  - {fileID: 3628600709255110583, guid: c0455e640391ad946a5045f970b2a6c3, type: 3}
+  - {fileID: 6613232943904433934, guid: ce688d5c60e122e44aea8012d30cc6ec, type: 3}
+  - {fileID: 3141752152718859306, guid: 3f7a0ad9ffe232348b441124d27bb848, type: 3}
+  - {fileID: 5419956863411268685, guid: bc6edfec8828b3946a93d134313b492e, type: 3}
+  shop: {fileID: 3941702298474015305, guid: af7715058d21a1844b27714a626e21d2, type: 3}
+  Cal: {fileID: 8607394064791601212, guid: 96741bd89d9e4fb43b486eca4a33d365, type: 3}
+  Ele: {fileID: 3338910303165518997, guid: fb10518629e9ac24ea9807578ca99e48, type: 3}
+  Com: {fileID: 731816825803054912, guid: d9105e89fb267aa42ad1d8df29088a64, type: 3}
+  Oesc: {fileID: 478621936614181529, guid: d61d732a3a6b8334286bda0297a7f81d, type: 3}
+  Dsa: {fileID: 7127898008462660364, guid: c3b93b3f3400b4344b8a362c80131f8a, type: 3}
+  Aero: {fileID: 75259994320298962, guid: 2d04edbb6880e40448a2c99426976fb4, type: 3}
+  Tfg: {fileID: 3258019445547913623, guid: 1bd2c8e0409173340ad6df53c907fe19, type: 3}
+  Black: {fileID: 852258241226523314, guid: 62e34d720cdbd494095eab39384dcc5f, type: 3}
+  canteen: '10-18
+
+    w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w
+
+    C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C
+
+    C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C
+
+    C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C
+
+    C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-C-C
+
+    C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-C-C
+
+    C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C
+
+    C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C
+
+    C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C
+
+    C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C
+
+'
+  office: "12-19\nW-K-L-\xD1-w-w-w-K-L-\xD1-w-w-w-K-L-\xD1-w-w-W\nW-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\nW-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\nW-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\nW-w-w-w-w-C-w-w-w-w-w-C-w-w-w-w-w-C-W\ned-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\ned-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\nW-K-L-\xD1-w-C-w-K-L-\xD1-w-C-w-K-L-\xD1-w-C-W\nW-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\nW-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\nW-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\nW-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n"
 --- !u!114 &6111012853909582980
 MonoBehaviour:
   m_ObjectHideFlags: 0
