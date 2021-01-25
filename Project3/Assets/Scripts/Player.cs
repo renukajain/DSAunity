@@ -11,9 +11,10 @@ public class Player : MovingObject
     public float dialogueTime = 3f;
     public static Collider2D collider;
 
-   // public Text dialogueText;
+
     public Text scoreText;
-    //public GameObject dialogueImage;
+    public GameObject imageDialogue;
+    public Text Dialogue;
 
     public void setCollider(Collider2D col) {
         collider = col;
@@ -62,19 +63,15 @@ public class Player : MovingObject
     //private int food;                            //Used to store player food points total during level.
     private Vector2 touchOrigin = -Vector2.one;    //Used to store location of screen touch origin for mobile controls.
 
-
     //Start overrides the Start function of MovingObject
     protected override void Start()
     {
         //Get a component reference to the Player's animator component
         animator = GetComponent<Animator>();
-        scoreText.text ="Turtle: " + turtle;
 
         //Get the current food point total stored in GameManager.instance between levels.
         //food = GameManager.instance.playerFoodPoints;
 
-        //Set the foodText to reflect the current player food total.
-        //foodText.text = "Food: " + food;
 
         //Call the Start function of the MovingObject base class.
         base.Start();
@@ -207,18 +204,26 @@ public class Player : MovingObject
         animator.SetTrigger("playerChop");
     }
 
-    /*void HideLevelImage()
+    private void HideDialogue()
     {
-        dialogueTime.SetActive(false);
+        imageDialogue.SetActive(false);
         //doingSetup = false;
     }
-    */
+
+    private void ShowDialogue(){
+        //imageDialogue.SetActive(true);
+        //Invoke("HideDialogue", dialogueTime);
+    }
+
 
 
     //OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
     private void OnTriggerEnter2D(Collider2D other)
     {
         this.setCollider(other);
+
+       // imageDialogue=GameObject.Find("ImageDialogue");
+        //Dialogue.text = GameObject.Find("ImageDialogue").GetComponent<Text>();
 
         //Check if the tag of the trigger collided with is the one needed to change map
         if (other.tag == "Turtle"){
@@ -229,77 +234,128 @@ public class Player : MovingObject
            // dialogueText.text = "Hola te doy un cafe";
             //dialogueTime.SetActive(true);
             //Invoke("HideLevelImage", dialogueTime);
+            //imageDialogue.Text.text = "Tortuga añadida";
+            //ShowDialogue();
         }
         else if (other.tag == "Coffee"){
-            coffee++;
+            coffee=1;
+            //Dialogue.text = "cafe";
+            //ShowDialogue();
         }
-        else if (other.tag == "Calculator")
-            calculator++;
-        else if (other.tag == "RedBull")
-            redBull++;
-        else if (other.tag == "Pills")
-            pills++;
+        else if (other.tag == "Calculator"){
+            calculator=1;
+            //Dialogue.text = "Calculadora añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "RedBull"){
+            redBull=1;
+            //Dialogue.text = "RedBull añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Pills"){
+            pills=1;
+            //Dialogue.text = "Pastllas añadido";
+            //ShowDialogue();
+        }
         else if (other.tag == "Rule"){
             rule++;
+            //Dialogue.text = "Regla añadido";
+            //ShowDialogue();
         }
-        else if (other.tag == "Compass")
-            compass++;
-        else if (other.tag == "Pencil")
-            pencil++;
-        else if (other.tag == "Glasses")
-            glasses++;
-        else if (other.tag == "Usb")
-            usb++;
-        else if (other.tag == "Book")
-            book++;
-        else if (other.tag == "Puzzle")
-            puzzle++;
-        else if (other.tag == "Cheat")
-            cheat++;
+        else if (other.tag == "Compass"){
+            compass=1;
+            //Dialogue.text = "Compas añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Pencil"){
+            pencil=1;
+            //Dialogue.text = "Lápiz añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Glasses"){
+            glasses=1;
+            //Dialogue.text = "Gafas añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Usb"){
+            usb=1;
+            //Dialogue.text = "usb añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Book"){
+            book=1;
+            //Dialogue.text = "Libro añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Puzzle"){
+            puzzle=1;
+            //Dialogue.text = "Puzzle añadido";
+            //ShowDialogue();
+        }
+        else if (other.tag == "Cheat"){
+            cheat=1;
+            //Dialogue.text = "Chuleta añadido";
+            //ShowDialogue();
+        }
         else if (other.tag == "CAL"){
-            if(calculator >= 4 && pencil >= 2 && rule >= 1){
+            if(!cal && calculator >= 4 && pencil >= 2 && rule >= 1){
                 cal=true;
                 calculator-= 4;
                 pencil -= 2;
                 rule -=1;
+                scoreText.text="SI apruebas calculo";
             }
+            else
+                scoreText.text="NO apruebas calculo";
         }
         else if (other.tag == "ELE"){
-            if(pills == 3 && glasses >= 1 && usb >= 1 && calculator>=1){
+            if(!ele && pills == 3 && glasses >= 1 && usb >= 1 && calculator>=1){
                ele=true;
                pills-=3;
                glasses-=1;
                usb-=1;
+               scoreText.text="SI apruebas electronica";
             }
+            else
+                scoreText.text="NO apruebas electronica";
         }
         else if (other.tag == "COM"){
-            if(coffee>=2 && cheat>=1&&compass>=4){
+            if(!com && coffee>=2 && cheat>=1&&compass>=4){
                 com=true;
                 coffee-=2;
                 cheat-=1;
                 compass-=4;
+                scoreText.text="SI apruebas comunicaciones";
             }
+            else
+                scoreText.text="NO apruebas comunicaciones";
         }
         else if (other.tag == "OESC"){
-            if(redBull>=2&&calculator>=2&&pills>=1&&usb>=4){
+            if(!oes && redBull>=2&&calculator>=2&&pills>=1&&usb>=4){
                 oes=true;
                 redBull-=2;
                 calculator-=2;
                 pills-=1;
                 usb-=4;
+                scoreText.text="SI apruebas oesc";
             }
+            else
+                scoreText.text="NO apruebas oesc";
         }
         else if (other.tag == "DSA"){
-            if(turtle>=1&&coffee>=3&&redBull>=1&&usb>=3&&glasses>=1){
+            if(!dsa && turtle>=1&&coffee>=3&&redBull>=1&&usb>=3&&glasses>=1){
                 dsa=true;
                 turtle-=1;
                 coffee-=3;
                 redBull-=1;
                 usb-=3;
                 glasses-=1;
+                scoreText.text="SI apruebas dsa";
             }
+            else
+                scoreText.text="NO apruebas oesc";
         }
-        else if (other.tag == "AERO"){
+        else if (!aero && other.tag == "AERO"){
             if(compass>=1&&rule>=1&&calculator>=1&&redBull>=3&&puzzle>=4&&cheat>=2){
                 aero=true;
                 compass-=1;
@@ -308,11 +364,14 @@ public class Player : MovingObject
                 redBull-=3;
                 puzzle-=4;
                 cheat-=2;
+                scoreText.text="SI apruebas aero";
             }
+            else
+                scoreText.text="NO apruebas aero";
 
         }
         else if (other.tag == "TFG"){
-            if(redBull>=3&&coffee>=2&glasses>=1&&puzzle>=1&&book>=5&&calculator>=1){
+            if(!tfg && redBull>=3&&coffee>=2&glasses>=1&&puzzle>=1&&book>=5&&calculator>=1){
                 tfg= true;
                 redBull-=3;
                 coffee-=2;
@@ -320,7 +379,10 @@ public class Player : MovingObject
                 puzzle-=1;
                 book-=5;
                 calculator-=1;
+                scoreText.text="SI apruebas TFG";
             }
+            else
+                scoreText.text="NO apruebas TFG";
         }
         else if (other.tag == "Exit")
         {
@@ -371,9 +433,9 @@ public class Player : MovingObject
             Invoke("Restart", restartLevelDelay);
             enabled = false;//Disable the player object since level is over.
         }
-
-        scoreText.text ="Turtle:" + turtle + " Coffee:"+ coffee + " RedBull:"+redBull+" Pills:"+pills+" Calculator:"+calculator+" Rule:"+rule+" Compass:"+compass+" Pencil:"+pencil+" Glasses"+glasses+" Usb:"+usb+" Book:"+book+" Puzzle:"+puzzle+" Cheat:"+cheat;
-
+        if (other.tag != "CAL" && other.tag != "ELE" &&  other.tag != "COM" && other.tag != "OESC" &&  other.tag != "DSA" && other.tag != "AERO" &&  other.tag != "TFG")
+            scoreText.text ="Turtle:" + turtle + " Coffee:"+ coffee + " RedBull:"+redBull+" Pills:"+pills+" Calculator:"+calculator+" Rule:"+rule+" Compass:"+compass+" Pencil:"+pencil+" Glasses"+glasses+" Usb:"+usb+" Book:"+book+" Puzzle:"+puzzle+" Cheat:"+cheat;
+        CheckIfGameOver();
 
     }
 
@@ -386,30 +448,13 @@ public class Player : MovingObject
     }
 
 
-    //LoseFood is called when an enemy attacks the player.
-    //It takes a parameter loss which specifies how many points to lose.
-    public void LoseFood(int loss)
-    {
-        //Set the trigger for the player animator to transition to the playerHit animation.
-        animator.SetTrigger("playerHit");
-
-        //Subtract lost food points from the players total.
-        //food -= loss;
-
-        //Update the food display with the new total.
-        //foodText.text = "-" + loss + " Food: " + food;
-
-        //Check to see if game has ended.
-        CheckIfGameOver();
-    }
-
 
     //CheckIfGameOver checks if the player is out of food points and if so, ends the game.
     private void CheckIfGameOver()
     {
         //Check if food point total is less than or equal to zero.
-        //if (food <= 0)
-        //{
+        if (cal && ele && com && oes && dsa && aero && tfg)
+        {
             //Call the PlaySingle function of SoundManager and pass it the gameOverSound as the audio clip to play.
             //SoundManager.instance.PlaySingle(gameOverSound);
 
@@ -418,6 +463,6 @@ public class Player : MovingObject
 
             //Call the GameOver function of GameManager.
             //GameManager.instance.GameOver();
-        //}
+        }
     }
 }
