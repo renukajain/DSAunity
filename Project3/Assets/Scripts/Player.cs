@@ -13,6 +13,7 @@ public class Player : MovingObject
 
 
     public Text scoreText;
+    public Text Text;
     public GameObject imageDialogue;
     public Text Dialogue;
 
@@ -70,7 +71,27 @@ public class Player : MovingObject
         animator = GetComponent<Animator>();
 
         //Get the current food point total stored in GameManager.instance between levels.
-        //food = GameManager.instance.playerFoodPoints;
+        turtle=GameManager.instance.turtle;
+        coffee=GameManager.instance.coffee;
+        redBull=GameManager.instance.redBull;
+        pills=GameManager.instance.pills;
+        calculator=GameManager.instance.calculator;
+        rule=GameManager.instance.rule;
+        compass=GameManager.instance.compass;
+        pencil=GameManager.instance.pencil;
+        glasses=GameManager.instance.glasses;
+        usb=GameManager.instance.usb;
+        book=GameManager.instance.book;
+        puzzle=GameManager.instance.puzzle;
+        cheat=GameManager.instance.cheat;
+
+        cal=GameManager.instance.cal;
+        ele=GameManager.instance.ele;
+        com=GameManager.instance.com;
+        dsa=GameManager.instance.dsa;
+        oes=GameManager.instance.oes;
+        aero=GameManager.instance.aero;
+        tfg=GameManager.instance.tfg;
 
 
         //Call the Start function of the MovingObject base class.
@@ -81,6 +102,27 @@ public class Player : MovingObject
     //This function is called when the behaviour becomes disabled or inactive.
     private void OnDisable()
     {
+        GameManager.instance.turtle+=turtle;
+        GameManager.instance.coffee+=coffee;
+        GameManager.instance.redBull+=redBull;
+        GameManager.instance.pills+=pills;
+        GameManager.instance.calculator+=calculator;
+        GameManager.instance.rule+=rule;
+        GameManager.instance.compass+=compass;
+        GameManager.instance.pencil+=pencil;
+        GameManager.instance.glasses+=glasses;
+        GameManager.instance.usb+=usb;
+        GameManager.instance.book+=book;
+        GameManager.instance.puzzle+=puzzle;
+        GameManager.instance.cheat+=cheat;
+
+        GameManager.instance.cal=cal;
+        GameManager.instance.ele=ele;
+        GameManager.instance.com=com;
+        GameManager.instance.oes=oes;
+        GameManager.instance.dsa=dsa;
+        GameManager.instance.aero=aero;
+        GameManager.instance.tfg=tfg;
         //When Player object is disabled, store the current local food total in the GameManager so it can be re-loaded in next level.
         //GameManager.instance.playerFoodPoints = food;
     }
@@ -239,66 +281,68 @@ public class Player : MovingObject
         }
         else if (other.tag == "Coffee"){
             coffee=1;
-            //Dialogue.text = "cafe";
+            scoreText.text = "caffee added";
             //ShowDialogue();
         }
         else if (other.tag == "Calculator"){
             calculator=1;
-            //Dialogue.text = "Calculadora añadido";
+            scoreText.text = "Calculadora añadido";
             //ShowDialogue();
         }
         else if (other.tag == "RedBull"){
             redBull=1;
-            //Dialogue.text = "RedBull añadido";
+            scoreText.text = "RedBull añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Pills"){
             pills=1;
-            //Dialogue.text = "Pastllas añadido";
+            scoreText.text = "Pastllas añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Rule"){
             rule++;
-            //Dialogue.text = "Regla añadido";
+            scoreText.text = "Regla añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Compass"){
             compass=1;
-            //Dialogue.text = "Compas añadido";
+            scoreText.text = "Compas añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Pencil"){
             pencil=1;
-            //Dialogue.text = "Lápiz añadido";
+            scoreText.text = "Lápiz añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Glasses"){
             glasses=1;
-            //Dialogue.text = "Gafas añadido";
+            scoreText.text = "Gafas añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Usb"){
             usb=1;
-            //Dialogue.text = "usb añadido";
+            scoreText.text = "usb añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Book"){
             book=1;
-            //Dialogue.text = "Libro añadido";
+            scoreText.text = "Libro añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Puzzle"){
             puzzle=1;
-            //Dialogue.text = "Puzzle añadido";
+            scoreText.text = "Puzzle añadido";
             //ShowDialogue();
         }
         else if (other.tag == "Cheat"){
             cheat=1;
-            //Dialogue.text = "Chuleta añadido";
+            scoreText.text = "Chuleta añadido";
             //ShowDialogue();
         }
         else if (other.tag == "CAL"){
-            if(!cal && calculator >= 4 && pencil >= 2 && rule >= 1){
+            if(cal)
+                 scoreText.text="ya has aprobado calculo";
+            else if (calculator >= 4 && pencil >= 2 && rule >= 1){
                 cal=true;
                 calculator-= 4;
                 pencil -= 2;
@@ -309,7 +353,9 @@ public class Player : MovingObject
                 scoreText.text="NO apruebas calculo";
         }
         else if (other.tag == "ELE"){
-            if(!ele && pills == 3 && glasses >= 1 && usb >= 1 && calculator>=1){
+            if(ele)
+               scoreText.text="ya has aprobado electonica";
+            else if( pills == 3 && glasses >= 1 && usb >= 1 && calculator>=1){
                ele=true;
                pills-=3;
                glasses-=1;
@@ -320,7 +366,9 @@ public class Player : MovingObject
                 scoreText.text="NO apruebas electronica";
         }
         else if (other.tag == "COM"){
-            if(!com && coffee>=2 && cheat>=1&&compass>=4){
+            if(com)
+                 scoreText.text="ya has aprobado comunicaciones";
+            else if(coffee>=2 && cheat>=1&&compass>=4){
                 com=true;
                 coffee-=2;
                 cheat-=1;
@@ -331,7 +379,9 @@ public class Player : MovingObject
                 scoreText.text="NO apruebas comunicaciones";
         }
         else if (other.tag == "OESC"){
-            if(!oes && redBull>=2&&calculator>=2&&pills>=1&&usb>=4){
+            if(oes)
+                 scoreText.text="ya has aprobado oesc";
+            else if(redBull>=2&&calculator>=2&&pills>=1&&usb>=4){
                 oes=true;
                 redBull-=2;
                 calculator-=2;
@@ -343,7 +393,9 @@ public class Player : MovingObject
                 scoreText.text="NO apruebas oesc";
         }
         else if (other.tag == "DSA"){
-            if(!dsa && turtle>=1&&coffee>=3&&redBull>=1&&usb>=3&&glasses>=1){
+            if(dsa)
+                scoreText.text="ya has aprobado dsa";
+            else if(turtle>=1&&coffee>=3&&redBull>=1&&usb>=3&&glasses>=1){
                 dsa=true;
                 turtle-=1;
                 coffee-=3;
@@ -356,7 +408,9 @@ public class Player : MovingObject
                 scoreText.text="NO apruebas oesc";
         }
         else if (!aero && other.tag == "AERO"){
-            if(compass>=1&&rule>=1&&calculator>=1&&redBull>=3&&puzzle>=4&&cheat>=2){
+            if(aero)
+                scoreText.text="ya has aprobado calculo";
+            else if(compass>=1&&rule>=1&&calculator>=1&&redBull>=3&&puzzle>=4&&cheat>=2){
                 aero=true;
                 compass-=1;
                 rule-=1;
@@ -371,7 +425,9 @@ public class Player : MovingObject
 
         }
         else if (other.tag == "TFG"){
-            if(!tfg && redBull>=3&&coffee>=2&glasses>=1&&puzzle>=1&&book>=5&&calculator>=1){
+            if(tfg)
+                scoreText.text="ya has aprobado tfg";
+            else if(redBull>=3&&coffee>=2&glasses>=1&&puzzle>=1&&book>=5&&calculator>=1){
                 tfg= true;
                 redBull-=3;
                 coffee-=2;
@@ -433,8 +489,8 @@ public class Player : MovingObject
             Invoke("Restart", restartLevelDelay);
             enabled = false;//Disable the player object since level is over.
         }
-        if (other.tag != "CAL" && other.tag != "ELE" &&  other.tag != "COM" && other.tag != "OESC" &&  other.tag != "DSA" && other.tag != "AERO" &&  other.tag != "TFG")
-            scoreText.text ="Turtle:" + turtle + " Coffee:"+ coffee + " RedBull:"+redBull+" Pills:"+pills+" Calculator:"+calculator+" Rule:"+rule+" Compass:"+compass+" Pencil:"+pencil+" Glasses"+glasses+" Usb:"+usb+" Book:"+book+" Puzzle:"+puzzle+" Cheat:"+cheat;
+        //if (other.tag != "CAL" && other.tag != "ELE" &&  other.tag != "COM" && other.tag != "OESC" &&  other.tag != "DSA" && other.tag != "AERO" &&  other.tag != "TFG")
+        Text.text ="Turtle:" + turtle + "\n Coffee:"+ coffee + "\n RedBull:"+redBull+"\n Pills:"+pills+"\n Calculator:"+calculator+"\n Rule:"+rule+"\n Compass:"+compass+"\n Pencil:"+pencil+"\n Glasses"+glasses+"\n Usb:"+usb+"\n Book:"+book+"\n Puzzle:"+puzzle+"\n Cheat:"+cheat;
         CheckIfGameOver();
 
     }
@@ -455,6 +511,8 @@ public class Player : MovingObject
         //Check if food point total is less than or equal to zero.
         if (cal && ele && com && oes && dsa && aero && tfg)
         {
+            scoreText.text = "Has ganado !!";
+
             //Call the PlaySingle function of SoundManager and pass it the gameOverSound as the audio clip to play.
             //SoundManager.instance.PlaySingle(gameOverSound);
 
@@ -462,7 +520,7 @@ public class Player : MovingObject
             //SoundManager.instance.musicSource.Stop();
 
             //Call the GameOver function of GameManager.
-            //GameManager.instance.GameOver();
+            GameManager.instance.GameOver();
         }
     }
 }
