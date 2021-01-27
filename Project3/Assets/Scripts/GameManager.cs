@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     public static Inventory instanceinv;
     public static GameManager instance = null;                //Static instance of GameManager which allows it to be accessed by any other script.
     private BoardManager boardScript;                        //Store a reference to our BoardManager which will set up the level.
+    
+    public string vectorlevel;                                    //Store string of the actual level we will plot in BoardManager
     public string levelname = "campus";                           //Name of the level. To some actions in BoardManager
     public string level = "1";                                    //Current level number following the below notation:
                                                                   //level 1: campus
@@ -43,26 +45,11 @@ public class GameManager : MonoBehaviour
                                                                   //level 4: office
                                                                   //level 5: lake
                                                                   //level 6: eetac
-    public string vectorlevel;                              //Store string of the actual level we will plot in BoardManager
+
+    public GameObject LevelImage;
+    public Text LevelImageText;
+
     [HideInInspector] public bool playersTurn = true;
-
-    private Text LevelText;
-    private GameObject Panel;
-    public Text Text0;
-    public Text Text1;
-    public Text Text2;
-    public Text Text3;
-    public Text Text4;
-    public Text Text5;
-    public Text Text6;
-    public Text Text7;
-    public Text Text8;
-    public Text Text9;
-    public Text Text10;
-    public Text Text11;
-    public Text Text12;
-
-
 
 
     //Awake is always called before any Start functions
@@ -88,18 +75,7 @@ public class GameManager : MonoBehaviour
 
         //Get a component reference to the attached BoardManager script
         boardScript = GetComponent<BoardManager>();
-        /*if (instanceinv == null)
-        {
-            lastinventory = instanceinv;
-            instanceinv = new Inventory();
-        }
-        else if (insctanceinv != null) {
-            
-            lastinventory = instanceinv;
-            instanceinv = instance.instanceinv;
-
-        }*/
-
+ 
         lastinventory = instanceinv;
         instanceinv = new Inventory();
 
@@ -120,7 +96,10 @@ public class GameManager : MonoBehaviour
         //Call the SetupScene function of the BoardManager script, pass it current level number.
 
 #if UNITY_ANDROID
-                        
+        LevelImage.gameObject.SetActive(true);
+        LevelImageText.gameObject.SetActive(true);   
+        LevelImageText.text = levelname;
+
            string eetac = "11-41/"
                 + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W/"
                 + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W/"
@@ -230,10 +209,14 @@ public class GameManager : MonoBehaviour
                     levelname = "campus"; break;
             }
             boardScript.SetupScene(vectorlevel,levelname);
+            LevelImage.gameObject.SetActive(false);
+            LevelImageText.gameObject.SetActive(false);
 
 
 #elif UNITY_STANDALONE || UNITY_EDITOR || UNITY_WEBPLAYER
-            
+        LevelImage.gameObject.SetActive(true);
+        LevelImageText.gameObject.SetActive(true);
+        LevelImageText.text = levelname;
            string eetac = "11-41/"
                 + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W/"
                 + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W/"
@@ -339,17 +322,22 @@ public class GameManager : MonoBehaviour
                     levelname = "campus"; break;
             }
             boardScript.SetupScene(vectorlevel,levelname);
+            LevelImage.gameObject.SetActive(false);
+            LevelImageText.gameObject.SetActive(false);
 #endif
     }
 
     private void HidePanel()
     {
-        Panel.SetActive(false);
+        LevelImage.SetActive(false);
     }
 
 
     public void GameOver()
     {
+        LevelImage.gameObject.SetActive(true);
+        LevelImageText.gameObject.SetActive(true);
+        LevelImageText.text = "¡Felicidades! ¡Estas preparado para ir a McDonald'S!";
 
     }
 }

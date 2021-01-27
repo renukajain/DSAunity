@@ -143,7 +143,7 @@ MonoBehaviour:
   Students:
   - {fileID: 5352656744953902481, guid: 60bee2c7f7fa2aa40b88a528708dc356, type: 3}
   - {fileID: 7558623171311985120, guid: 426178f0971bb7d41901538c09cda236, type: 3}
-  - {fileID: 5419956863411268685, guid: bc6edfec8828b3946a93d134313b492e, type: 3}
+  - {fileID: 5939342859821403765, guid: 0f3b35619781a2547b7107a8a6946a86, type: 3}
   - {fileID: 4922088048100335419, guid: c1f6696ab4aafe44d8da3b0b417ea96b, type: 3}
   - {fileID: 5040889290217572307, guid: bcbd35d58fecf4644b2d1f2e2ef9336d, type: 3}
   - {fileID: 645931276103883485, guid: 901397d4aa430d547a41fb8f130e07e4, type: 3}
@@ -175,9 +175,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelStartDelay: 0
-  I: {fileID: 0}
+  vectorlevel: 
+  levelname: campus
   level: 
-  levelstring: 
+  LevelImage: {fileID: 933132372700735154, guid: 6f1861f120d4b1c41ab015450850e4e9,
+    type: 3}
+  LevelImageText: {fileID: 7453161792197049656, guid: a5af7122815204d4982863f3e7a6fe60,
+    type: 3}
   playersTurn: 1
   Text0: {fileID: 0}
   Text1: {fileID: 0}

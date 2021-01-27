@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 302, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 84
+  controlID: 58
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -214,10 +214,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 578, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 577, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 126
+  controlID: 57
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 348
     height: 731
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -404,20 +404,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefab
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jsalm\UnityProjects\DSAunity\Project3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e410000
-    m_LastClickedID: 16734
-    m_ExpandedIDs: 000000004841000000ca9a3b
+    m_SelectedIDs: fa3e0000
+    m_LastClickedID: 16122
+    m_ExpandedIDs: 00000000e63e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000048410000
+    m_ExpandedIDs: 00000000e63e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,7 +497,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 360}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 136
@@ -532,7 +532,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a8c7fcff30d5fcff1657feff3264feff546afeffb477feffc67dfeff5a51ffff7251ffff8651ffff4052ffffb4e4fffff4ffffff504000009e40000090700000e8700000
+      m_ExpandedIDs: c446fdffdc46fdfff046fdffa847fdffc65bfdff2ea6fdffcaeefdffa0f4fdff140cfeff324ffeffec55feffee18ffff0a1fffff10bcffff52f4ffff64fbfffff4ffffff743a0000a43a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -8308,13 +8308,13 @@ MonoBehaviour:
       workTreeStatus: 1
     changedFilesText: 161 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2021-01-26T19:47:34.880+01:00
+      updatedTimeString: 2021-01-27T02:47:00.322+01:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2021-01-27T02:43:00.570+01:00
+      updatedTimeString: 2021-01-27T05:34:08.053+01:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2021-01-27T05:29:22.939+01:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -62514,9 +62514,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 283.96432, y: 69.62512, z: -12.5}
+    m_Target: {x: 678.5059, y: 233.4909, z: -29.40091}
     speed: 2
-    m_Value: {x: 283.96432, y: 69.62512, z: -12.5}
+    m_Value: {x: 678.5059, y: 233.4909, z: -29.40091}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -62566,9 +62566,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 229.59708
+    m_Target: 295.98
     speed: 2
-    m_Value: 229.59708
+    m_Value: 295.98
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -62656,4 +62656,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1684

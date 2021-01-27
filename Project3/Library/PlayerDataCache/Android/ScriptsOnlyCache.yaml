@@ -3,8 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BUTTON
     - BoardManager
+    - ButtonBye
     - GameManager
-    - Inventory
     - Loader
     - Player
     GitHub.Unity.45.dll:
@@ -67,35 +67,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 0}
-    - Class: 114
       Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11302}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11590}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11646}
     - Class: 114
-      Script: {instanceID: 12356}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12968}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 13190}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 13288}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 13328}
+      Script: {instanceID: 13298}
     - Class: 114
-      Script: {instanceID: 13386}
+      Script: {instanceID: 13356}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13856}
     - Class: 114
-      Script: {instanceID: 13884}
+      Script: {instanceID: 13910}
     - Class: 114
-      Script: {instanceID: 13938}
+      Script: {instanceID: 14538}
     - Class: 114
-      Script: {instanceID: 14566}
+      Script: {instanceID: 27184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -387,7 +385,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 8af250609deba1b965572a8e29c28af3
+      Hash: 6ad78cc33b34559c9bc7d361872de7b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -435,7 +433,7 @@ ScriptsOnlyBuild:
     className: BoardManager
   - hash:
       serializedVersion: 2
-      Hash: bb6859ed423aab64be219afc03804178
+      Hash: b06c8ff067dc79ddf460f7955443ca13
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BUTTON
@@ -501,7 +499,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: b2e849cfeb19fcdee5b267aa9fc6e99a
+      Hash: 8343873e09ec7f0b8a76d06264d9208a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
@@ -519,7 +517,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: a70327eb1a693640a3b54ee3796b9a2a
+      Hash: 8f8e3828bb6060fc62db8a0bed4477b6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -661,6 +659,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b748cd35b539928b1886d166326b3d7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonBye
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Purchase
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity

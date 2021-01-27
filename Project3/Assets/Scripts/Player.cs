@@ -12,10 +12,13 @@ public class Player : MovingObject
     public static Collider2D collider;
 
     public Text scoreText;
-    public Text Text;
+    public GameObject scorePannel;
     public GameObject imageDialogue;
     public Text Dialogue;
-
+    public Text LevelImageText;
+    public GameObject LevelImage;
+    public GameObject ShopPanel;
+    public Button Button;
     
     public void setCollider(Collider2D col) {
         collider = col;
@@ -74,29 +77,6 @@ public class Player : MovingObject
         animator = GetComponent<Animator>();
 
         //Get the current food point total stored in GameManager.instance between levels.
-        
-        /*turtle=GameManager.instance.turtle;
-        coffee=GameManager.instance.coffee;
-        redBull=GameManager.instance.redBull;
-        pills=GameManager.instance.pills;
-        calculator=GameManager.instance.calculator;
-        rule=GameManager.instance.rule;
-        compass=GameManager.instance.compass;
-        pencil=GameManager.instance.pencil;
-        glasses=GameManager.instance.glasses;
-        usb=GameManager.instance.usb;
-        book=GameManager.instance.book;
-        puzzle=GameManager.instance.puzzle;
-        cheat=GameManager.instance.cheat;
-
-        cal=GameManager.instance.cal;
-        ele=GameManager.instance.ele;
-        com=GameManager.instance.com;
-        dsa=GameManager.instance.dsa;
-        oes=GameManager.instance.oes;
-        aero=GameManager.instance.aero;
-        tfg=GameManager.instance.tfg;*/
-
 
         //Call the Start function of the MovingObject base class.
         base.Start();
@@ -106,6 +86,8 @@ public class Player : MovingObject
     //This function is called when the behaviour becomes disabled or inactive.
     private void OnDisable()
     {
+        LevelImage.gameObject.SetActive(true);
+        LevelImageText.gameObject.SetActive(true);
         //When Player object is disabled, store the current local food total in the GameManager so it can be re-loaded in next level.
     }
 
@@ -205,6 +187,8 @@ public class Player : MovingObject
 
         //Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
         base.AttemptMove<T>(xDir, yDir);
+        scorePannel.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
 
         //Hit allows us to reference the result of the Linecast done in Move.
         RaycastHit2D hit;
@@ -263,15 +247,19 @@ public class Player : MovingObject
             turtle++;
             GameManager.instanceinv.SetTurtle(turtle);
             other.gameObject.SetActive(false);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Tortuga añadida";
             //ShowDialogue();
         }
         else if (other.tag == "Coffee")
         {
-            coins= coins + 10;
+            coins = coins + 10;
             GameManager.instanceinv.SetCoins(coins);
             coffee++;
             GameManager.instanceinv.SetCoffee(coffee);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Café añadido";
             //ShowDialogue();
         }
@@ -281,6 +269,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             calculator++;
             GameManager.instanceinv.SetCalculator(calculator);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Calculadora añadida";
             //ShowDialogue();
         }
@@ -290,6 +280,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             redBull++;
             GameManager.instanceinv.SetRedBull(redBull);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "RedBull añadido";
             //ShowDialogue();
         }
@@ -299,6 +291,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             pills++;
             GameManager.instanceinv.SetPills(pills);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Pastllas añadidas";
             //ShowDialogue();
         }
@@ -308,6 +302,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             rule++;
             GameManager.instanceinv.SetRule(rule);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Regla añadida";
             //ShowDialogue();
         }
@@ -317,6 +313,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             compass++;
             GameManager.instanceinv.SetCompass(compass);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Compás añadido";
             //ShowDialogue();
         }
@@ -326,6 +324,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             pencil++;
             GameManager.instanceinv.SetPencil(pencil);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Lápiz añadido";
             //ShowDialogue();
         }
@@ -335,6 +335,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             glasses++;
             GameManager.instanceinv.SetGlasses(glasses);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Gafas añadidas";
             //ShowDialogue();
         }
@@ -344,6 +346,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             usb++;
             GameManager.instanceinv.SetUsb(usb);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "usb añadido";
             //ShowDialogue();
         }
@@ -353,6 +357,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             book++;
             GameManager.instanceinv.SetBook(book);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Libro añadido";
             //ShowDialogue();
         }
@@ -362,6 +368,8 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             puzzle++;
             GameManager.instanceinv.SetPuzzle(puzzle);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Puzzle añadido";
             //ShowDialogue();
         }
@@ -371,71 +379,111 @@ public class Player : MovingObject
             GameManager.instanceinv.SetCoins(coins);
             cheat++;
             GameManager.instanceinv.SetCheat(cheat);
+            scorePannel.gameObject.SetActive(true);
+            scoreText.gameObject.SetActive(true);
             scoreText.text = "Chuleta añadida";
             //ShowDialogue();
         }
         else if (other.tag == "CAL")
         {
-            
+
             if (GameManager.instanceinv.GetCalc())
-                scoreText.text = "Ya has aprobado calculo";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado calculo, pero puedo resolver dudas ya que soy fundamental para ti";
+            }
             else if (calculator >= 4 && pencil >= 2 && rule >= 1)
             {
                 GameManager.instanceinv.SetCalc();
+                cal = true;
                 calculator -= 4;
                 pencil -= 2;
                 rule -= 1;
                 GameManager.instanceinv.SetCalculator(calculator);
                 GameManager.instanceinv.SetPencil(pencil);
                 GameManager.instanceinv.SetRule(rule);
-                scoreText.text = "SI apruebas calculo";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas calculo, puedes seguir en este infierno llamado universidad";
             }
             else
-                scoreText.text = "NO apruebas calculo";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas calculo, yo que tu volveria al bachi a ver si asi aprendes algo";
+            }
         }
         else if (other.tag == "ELE")
         {
             if (GameManager.instanceinv.GetElec())
-                scoreText.text = "Ya has aprobado electonica";
-            else if (pills == 3 && glasses >= 1 && usb >= 1 && calculator >= 1)
+            {
+                scoreText.text = "Ya has aprobado electonica, vete a montar robiticos o algo va";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+            }
+            else if (pills >= 3 && glasses >= 1 && usb >= 1 && calculator >= 1)
             {
                 GameManager.instanceinv.SetElec();
+                ele = true;
                 pills -= 3;
                 glasses -= 1;
                 usb -= 1;
                 GameManager.instanceinv.SetPills(pills);
                 GameManager.instanceinv.SetGlasses(glasses);
                 GameManager.instanceinv.SetUsb(usb);
-                scoreText.text = "SI apruebas electronica";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas electronica, has sabido jugar al arduino bien";
             }
             else
-                scoreText.text = "NO apruebas electronica";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas electronica, no es lo tuyo Kirchoff";
+            }
         }
         else if (other.tag == "COM")
         {
-            if (GameManager.instanceinv.GetElec())
-                scoreText.text = "Ya has aprobado comunicaciones";
+            if (GameManager.instanceinv.GetComms())
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado comunicaciones, vete a echar curriculums a Movistar va";
+            }
             else if (coffee >= 2 && cheat >= 1 && compass >= 4)
             {
-                GameManager.instanceinv.SetElec();
+                GameManager.instanceinv.SetComms();
+                com = true;
                 coffee -= 2;
                 cheat -= 1;
                 compass -= 4;
                 GameManager.instanceinv.SetCoffee(coffee);
                 GameManager.instanceinv.SetCheat(cheat);
                 GameManager.instanceinv.SetCompass(compass);
-                scoreText.text = "SI apruebas comunicaciones";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas comunicaciones, preparate para el 5G que viene faena";
             }
             else
-                scoreText.text = "NO apruebas comunicaciones";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas comunicaciones, pareces una antena sin señal";
+            }
         }
         else if (other.tag == "OESC")
         {
             if (GameManager.instanceinv.GetOesc())
-                scoreText.text = "Ya has aprobado oesc";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado oesc, mejora tus habilidades socioempresariales";
+            }
             else if (redBull >= 2 && calculator >= 2 && pills >= 1 && usb >= 4)
             {
                 GameManager.instanceinv.SetOesc();
+                oes = true;
                 redBull -= 2;
                 calculator -= 2;
                 pills -= 1;
@@ -445,19 +493,29 @@ public class Player : MovingObject
                 GameManager.instanceinv.SetCalculator(calculator);
                 GameManager.instanceinv.SetPills(pills);
                 GameManager.instanceinv.SetUsb(usb);
-
-                scoreText.text = "SI apruebas oesc";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas oesc. Has hecho un buen esfuerzo y tu responsabilidad como ingeniero/a estudiante cumplida";
             }
             else
-                scoreText.text = "NO apruebas oesc";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas oesc. Deberias ser mas autoresponable";
+            }
         }
         else if (other.tag == "DSA")
         {
             if (GameManager.instanceinv.GetDsa())
-                scoreText.text = "Ya has aprobado dsa";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado dsa, vete a hacer juegos";
+            }
             else if (turtle >= 1 && coffee >= 3 && redBull >= 1 && usb >= 3 && glasses >= 1)
             {
                 GameManager.instanceinv.SetDsa();
+                dsa = true;
                 turtle -= 1;
                 coffee -= 3;
                 redBull -= 1;
@@ -468,18 +526,29 @@ public class Player : MovingObject
                 GameManager.instanceinv.SetRedBull(redBull);
                 GameManager.instanceinv.SetUsb(usb);
                 GameManager.instanceinv.SetGlasses(glasses);
-                scoreText.text = "SI apruebas dsa";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas dsa. De aqui a Electronic Arts de lo bueno que eres fiera";
             }
             else
-                scoreText.text = "NO apruebas oesc";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas dsa ni currando lo que te queda de cuadri";
+            }
         }
-        else if (!aero && other.tag == "AERO")
+        else if (other.tag == "AERO")
         {
             if (GameManager.instanceinv.GetAero())
-                scoreText.text = "Ya has aprobado calculo";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado aerodinámica, no vengas a fardar y vete";
+            }
             else if (compass >= 1 && rule >= 1 && calculator >= 1 && redBull >= 3 && puzzle >= 4 && cheat >= 2)
             {
                 GameManager.instanceinv.SetAero();
+                aero = true;
                 compass -= 1;
                 rule -= 1;
                 calculator -= 1;
@@ -492,19 +561,30 @@ public class Player : MovingObject
                 GameManager.instanceinv.SetRedBull(redBull);
                 GameManager.instanceinv.SetPuzzle(puzzle);
                 GameManager.instanceinv.SetCheat(cheat);
-                scoreText.text = "SI apruebas aero";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas aero. Eres un/a bestia por aprobar mi asignatura";
             }
             else
-                scoreText.text = "NO apruebas aero";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas aero. A visitar al paracaidista de Ciudadanos en la pracitca crack";
+            }
 
         }
         else if (other.tag == "TFG")
         {
             if (GameManager.instanceinv.GetTfg())
-                scoreText.text = "Ya has aprobado tfg";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "Ya has aprobado tfg, sal de esta universidad que tu plaza son 2000€ mas para mi";
+            }
             else if (redBull >= 3 && coffee >= 2 & glasses >= 1 && puzzle >= 1 && book >= 5 && calculator >= 1)
             {
                 GameManager.instanceinv.SetTfg();
+                tfg = true;
                 redBull -= 3;
                 coffee -= 2;
                 glasses -= 1;
@@ -517,10 +597,16 @@ public class Player : MovingObject
                 GameManager.instanceinv.SetPuzzle(puzzle);
                 GameManager.instanceinv.SetBook(book);
                 GameManager.instanceinv.SetCalculator(calculator);
-                scoreText.text = "SI apruebas TFG";
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "SI apruebas TFG. Felicidades, has acabado (si no tienes que repetir ninguna jeje)";
             }
             else
-                scoreText.text = "NO apruebas TFG";
+            {
+                scorePannel.gameObject.SetActive(true);
+                scoreText.gameObject.SetActive(true);
+                scoreText.text = "NO apruebas TFG. Lo siento pero esas 40 paginas se van a repetir";
+            }
         }
         else if (other.tag == "Exit")
         {
@@ -564,6 +650,11 @@ public class Player : MovingObject
             Invoke("Restart", restartLevelDelay);
             enabled = false;//Disable the player object since level is over.
         }
+        else if (other.tag == "Shop")
+        {
+            ShopPanel.gameObject.SetActive(true);
+            Button.gameObject.SetActive(true);
+        }
         else
         {
             GameObject gm = GameObject.FindWithTag("GameController");
@@ -572,8 +663,7 @@ public class Player : MovingObject
             enabled = false;//Disable the player object since level is over.
         }
         //if (other.tag != "CAL" && other.tag != "ELE" &&  other.tag != "COM" && other.tag != "OESC" &&  other.tag != "DSA" && other.tag != "AERO" &&  other.tag != "TFG")
-        Text.text ="Turtle:" + turtle + "\n Coffee:"+ coffee + "\n RedBull:"+redBull+"\n Pills:"+pills+"\n Calculator:"+calculator+"\n Rule:"+rule+"\n Compass:"+compass+"\n Pencil:"+pencil+"\n Glasses"+glasses+"\n Usb:"+usb+"\n Book:"+book+"\n Puzzle:"+puzzle+"\n Cheat:"+cheat;
-        CheckIfGameOver();
+        
 
     }
 
@@ -591,7 +681,7 @@ public class Player : MovingObject
     private void CheckIfGameOver()
     {
         //Check if food point total is less than or equal to zero.
-        if (cal && ele && com && oes && dsa && aero && tfg)
+        if (GameManager.instanceinv.GetCalc() && GameManager.instanceinv.GetElec() && GameManager.instanceinv.GetComms() && GameManager.instanceinv.GetOesc() && GameManager.instanceinv.GetDsa() && GameManager.instanceinv.GetAero() && GameManager.instanceinv.GetTfg())
         {
             scoreText.text = "Has ganado !!";
 
@@ -602,6 +692,12 @@ public class Player : MovingObject
             //SoundManager.instance.musicSource.Stop();
 
             //Call the GameOver function of GameManager.
+            GameManager.instance.GameOver();
+        }
+        else if (cal && ele && com && oes && aero && tfg && dsa) {
+            scoreText.text = "Has ganado !!";
+
+
             GameManager.instance.GameOver();
         }
     }

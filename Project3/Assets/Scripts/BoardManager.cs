@@ -183,8 +183,7 @@ public class BoardManager : MonoBehaviour
         gridPositions.Clear();
 
         string[] map = mapa.Split('/'); //Split using '/' to separate dimensions of array and different rows
-        Debug.Log(mapa);
-        Debug.Log(level);
+
 
         string[] d = map[0].Split('-'); //Split first row to know dimensions of array
         rows = Int32.Parse(d[0]);
