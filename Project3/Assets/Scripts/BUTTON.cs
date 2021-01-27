@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class BUTTON : MonoBehaviour
 {
+    
+    public Player player;
     int counter = 0;
     public GameObject Panel;
     public Text Text0;
@@ -20,30 +22,36 @@ public class BUTTON : MonoBehaviour
     public Text Text10;
     public Text Text11;
     public Text Text12;
+
+
+
     // Start is called before the first frame update
     public void TriggerInventory()
     {
-       counter++;
-       if (counter%2==1){
-            Text0.text = "Turtle: " + Inventory.instance.turtleQuantity.ToString();
-            Text1.text = "Coffee: " + Inventory.instance.coffQuantity.ToString();
-            Text2.text = "RedBull: " + Inventory.instance.redBullQuantity.ToString();
-            Text3.text = "Pills: " + Inventory.instance.pillsQuantity.ToString();
-            Text4.text = "Calculator: " + Inventory.instance.calculatorQuantity.ToString();
-            Text5.text = "Rule: " + Inventory.instance.ruleQuantity.ToString();
-            Text6.text ="Compass: "+ Inventory.instance.compassQuantity.ToString();
-            Text7.text ="Pencil: " + Inventory.instance.pencilQuantity.ToString();
-            Text8.text ="Glasses: "+ Inventory.instance.glassesQuantity.ToString();
-            Text9.text ="USB: "+ Inventory.instance.usbQuantity.ToString();
-            Text10.text ="Book: " + Inventory.instance.bookQuantity.ToString();
-            Text11.text ="Puzzle: " + Inventory.instance.puzzleQuantity.ToString();
-            Text12.text ="CheatSheet: " + Inventory.instance.cheatQuantity.ToString();
+        Inventory I = GameManager.instanceinv;
+        counter++;
+        if (counter % 2 == 1)
+        {
+            Text0.text = "Turtle: " + I.GetTurtle().ToString();
+            Text1.text = "Coffee: " + I.GetCoffee().ToString();
+            Text2.text = "RedBull: " + I.GetRedBull().ToString();
+            Text3.text = "Pills: " + I.GetPills().ToString();
+            Text4.text = "Calculator: " + I.GetCalculator().ToString();
+            Text5.text = "Rule: " + I.GetRule().ToString();
+            Text6.text = "Compass: " + I.GetCompass().ToString();
+            Text7.text = "Pencil: " + I.GetPencil().ToString();
+            Text8.text = "Glasses: " + I.GetGlasses().ToString();
+            Text9.text = "USB: " + I.GetUsb().ToString();
+            Text10.text = "Book: " + I.GetBook().ToString();
+            Text11.text = "Puzzle: " + I.GetPuzzle().ToString();
+            Text12.text = "CheatSheet: " + I.GetCheat().ToString();
+
             Panel.gameObject.SetActive(true);
-
-       }
-       else
+        }
+        else
             Panel.gameObject.SetActive(false);
-
-        
     }
+
+
+
 }

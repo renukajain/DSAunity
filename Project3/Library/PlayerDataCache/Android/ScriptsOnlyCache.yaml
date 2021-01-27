@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BUTTON
     - BoardManager
     - GameManager
+    - Inventory
     - Loader
     - Player
     GitHub.Unity.45.dll:
@@ -34,6 +36,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Main.unity:
@@ -64,27 +67,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
       Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11302}
+      Script: {instanceID: 11334}
     - Class: 114
-      Script: {instanceID: 11590}
+      Script: {instanceID: 11622}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11678}
     - Class: 114
-      Script: {instanceID: 12322}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 12934}
+      Script: {instanceID: 12968}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 13288}
     - Class: 114
-      Script: {instanceID: 13848}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13386}
     - Class: 114
-      Script: {instanceID: 14530}
+      Script: {instanceID: 13654}
+    - Class: 114
+      Script: {instanceID: 13884}
+    - Class: 114
+      Script: {instanceID: 13938}
+    - Class: 114
+      Script: {instanceID: 14566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -304,6 +315,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 80b065d18e9d87997ee48d583061c377
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShopPanel
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -370,7 +387,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: d75e6b5a224f6e820ce620109bd3d8d5
+      Hash: 8af250609deba1b965572a8e29c28af3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -380,6 +397,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 376df9f10defc8c4320baf452fb5e98a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataBase
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -406,10 +429,16 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 547ac0ff0c59ab1bbbe27b4e872b98e0
+      Hash: cd9b95efd8ac5a227c0756e91bd5d64f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BoardManager
+  - hash:
+      serializedVersion: 2
+      Hash: bb6859ed423aab64be219afc03804178
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BUTTON
   - hash:
       serializedVersion: 2
       Hash: 71b711096c6c32621c1d4c02310898b7
@@ -472,6 +501,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: b2e849cfeb19fcdee5b267aa9fc6e99a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
+  - hash:
+      serializedVersion: 2
       Hash: 58e68364412c67eae2bdb4954be2dcc2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -484,7 +519,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 108689c9eae5bf8f5bc35dcf3468894a
+      Hash: a70327eb1a693640a3b54ee3796b9a2a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -629,4 +664,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/jsalm/UnityProjects/DSAunity/GameAPK.apk
+  playerPath: C:/Users/jsalm/AndroidStudioProjects/ExportedUnity

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Inventory : MonoBehaviour
+//[CreateAssetMenu(menuName = "Inventory System/Database")]
+public class Inventory : MonoBehaviour//ScriptableObject //
 {
 
     public static Inventory instance = null;
@@ -23,51 +24,61 @@ public class Inventory : MonoBehaviour
     public int cheatQuantity;
     public int coinsQuantity;
 
-    public int calcAch;
-    public int electronicsAch;
-    public int commsAch;
-    public int oescAch;
-    public int dsaAch;
-    public int aeroAch;
-    public int tfgAch;
+    public bool calcAch;
+    public bool electronicsAch;
+    public bool commsAch;
+    public bool oescAch;
+    public bool dsaAch;
+    public bool aeroAch;
+    public bool tfgAch;
 
+    public Inventory() {
+        instance = this;
+    }
+    public Inventory GetInventory() {
+        return instance;
+    }
     public void SetCalc(){
-        this.calcAch=1;
+        this.calcAch=true;
     }
     public void SetElec(){
-        this.electronicsAch=1;
+        this.electronicsAch=true;
     }
     public void SetComms(){
-        this.commsAch=1;
+        this.commsAch=true;
     }
     public void SetOesc(){
-        this.oescAch=1;
+        this.oescAch = true;
+    }
+    public void SetDsa()
+    {
+        this.dsaAch = true;
     }
     public void SetAero(){
-        this.aeroAch=1;
+        this.aeroAch = true;
     }
     public void SetTfg(){
-        this.tfgAch=1;
+        this.tfgAch = true;
     }
-    public int GetCalc(){
+    public bool GetCalc(){
         return this.calcAch;
     }
-    public int GetElec(){
+    public bool GetElec(){
         return this.electronicsAch;
     }
-    public int GetComms(){
+    public bool GetComms(){
         return this.commsAch;
     }
-    public int GetOesc(){
+    public bool GetOesc(){
         return this.oescAch;
     }
-    public int GetDsa(){
+    public bool GetDsa(){
         return this.dsaAch;
     }
-    public int GetAero(){
+    public bool GetAero(){
         return this.aeroAch;
     }
-    public int GetTfg(){
+    public bool GetTfg(){
         return this.tfgAch;
     }
 
@@ -84,40 +95,40 @@ public class Inventory : MonoBehaviour
         this.coffQuantity=q;
     }
     public void SetRedBull(int q){
-        this.redBullQuantity+=q;
+        this.redBullQuantity=q;
     }
     public void SetPills(int q){
-        this.pillsQuantity+=q;
+        this.pillsQuantity=q;
     }
     public void SetCalculator(int q){
-        this.calculatorQuantity+=q;
+        this.calculatorQuantity=q;
     }
     public void SetRule(int q){
-        this.ruleQuantity+=q;
+        this.ruleQuantity=q;
     }
     public void SetCompass(int q){
-        this.compassQuantity+=q;
+        this.compassQuantity=q;
     }
     public void SetPencil(int q){
-        this.pencilQuantity+=q;
+        this.pencilQuantity=q;
     }
     public void SetGlasses(int q){
-        this.glassesQuantity+=q;
+        this.glassesQuantity=q;
     }
     public void SetUsb(int q){
-        this.usbQuantity+=q;
+        this.usbQuantity=q;
     }
     public void SetBook(int q){
-        this.bookQuantity+=q;
+        this.bookQuantity=q;
     }
     public void SetPuzzle(int q){
-        this.puzzleQuantity+=q;
+        this.puzzleQuantity=q;
     }
     public void SetCheat(int q){
-        this.cheatQuantity+=q;
+        this.cheatQuantity=q;
     }
     public void SetCoins(int q){
-        this.coinsQuantity+=q;
+        this.coinsQuantity=q;
     }
 
     public string GetID(){

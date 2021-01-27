@@ -13,7 +13,7 @@ public class BoardManager : MonoBehaviour
         public int minimum;
         public int maximum;
 
-        public Count (int max, int min)
+        public Count(int max, int min)
         {
             minimum = min;
             maximum = max;
@@ -104,7 +104,7 @@ public class BoardManager : MonoBehaviour
     private GameObject mainCamera;
     private Transform boardHolder; //A variable to store a reference to the transform of our Board object.
 
-    private List <Vector3> gridPositions = new List <Vector3> ();    //A list of possible locations to place tiles.
+    private List<Vector3> gridPositions = new List<Vector3>();    //A list of possible locations to place tiles.
     /*
     private string[,] map = new string[32, 15] 
     {
@@ -142,87 +142,6 @@ public class BoardManager : MonoBehaviour
                                                 {"f","f","e4","e6","e6","e6","c5","c6","c6","c7","c6","c7","f","f","f"}
     };
     */
-
-    public static string eetac = "11-41\n"
-                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n"
-                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
-                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
-                + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4\n"
-                + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no\n";
-
-    public static string resa = "11-41\n"
-                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n"
-                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
-                + "W-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-W\n"
-                + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4\n"
-                + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no\n"
-                + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no\n";
-
-    public string canteen = "10-18\n"
-    + "w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w\n"
-    + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C\n"
-    + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C\n"
-    + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&\n"
-    + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(\n"
-    + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C\n"
-    + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C\n"
-    + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C\n"
-    + "C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C\n";
-
-    public string office = "12-19\n"
-    + "W-K-L-Ñ-w-w-w-K-L-Ñ-w-w-w-K-L-Ñ-w-w-W\n"
-    + "W-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\n"
-    + "W-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\n"
-    + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\n"
-    + "W-w-w-w-w-C-w-w-w-w-w-C-w-w-w-w-w-C-W\n"
-    + "ed-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\n"
-    + "ed-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W\n"
-    + "W-K-L-Ñ-w-C-w-K-L-Ñ-w-C-w-K-L-Ñ-w-C-W\n"
-    + "W-C-C-C-C-C-W-C-C-C-C-C-W-C-C-C-C-C-W\n"
-    + "W-S-O-4-C-C-W-S-O-4-C-C-W-S-O-4-C-C-W\n"
-    + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W\n"
-    + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W\n";
-
-    public static string lake = "10-18\n"
-        + "ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f\n"
-        + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f\n"
-        + "f-g-i-o-o-o-o-o-o-o-o-o-o-o-o-p-g-f\n"
-        + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f\n"
-        + "f-g-k-l-l-l-z-l-l-l-l-l-z-l-l-n-g-f\n"
-        + "f-g-k-l-l-l-l-l-l-z-l-l-l-l-l-n-g-f\n"
-        + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f\n"
-        + "f-g-x-c-c-c-c-c-c-c-c-c-c-c-c-v-g-f\n"
-        + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f\n"
-        + "f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f";
-
-    public static string campus = "14-18\n"
-        + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g\n"
-        + "g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g\n"
-        + "g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g\n"
-        + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g\n"
-        + "g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g\n"
-        + "g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g\n"
-        + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g\n"
-        + "g-f-g-e-1-1-f-f-f-f-g-g-g-g-g-g-g-g\n"
-        + "g-f-g-1-1-1-f-f-f-f-g-g-i-o-p-g-g-g\n"
-        + "g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g\n"
-        + "g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g\n"
-        + "g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g\n"
-        + "g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g\n"
-        + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g\n";
-
     void LayoutObjectAtRandom(GameObject[] tileArray, int minimum, int maximum)
     {
         //Choose a random number of objects to instantiate within the minimum and maximum limits
@@ -235,7 +154,7 @@ public class BoardManager : MonoBehaviour
             Vector3 randomPosition = RandomPosition();
 
             //Choose a random tile from tileArray and assign it to tileChoice
-            GameObject tileChoice = tileArray[Random.Range (0, tileArray.Length)];
+            GameObject tileChoice = tileArray[Random.Range(0, tileArray.Length)];
 
             //Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
             Instantiate(tileChoice, randomPosition, Quaternion.identity);
@@ -259,40 +178,28 @@ public class BoardManager : MonoBehaviour
     }
 
     //SetupScene initializes our level and calls the previous functions to lay out the game board
-    public void SetupScene (string level)
+    public void SetupScene(String mapa, String level)
     {
         gridPositions.Clear();
-        string[] map;
-        switch (level)
-        {
-            case "lake":
-                map = lake.Split('\n'); break;
-            case "eetac":
-                map = eetac.Split('\n'); break;
-            case "resa":
-                map = resa.Split('\n'); break;
-            case "canteen":
-                map = canteen.Split('\n'); break;
-            case "office":
-                map = office.Split('\n'); break;
-            default:
-                map = campus.Split('\n'); break;
-        }
 
-        string[] d = map[0].Split('-');
-        columns = Int32.Parse(d[1]);
+        string[] map = mapa.Split('/'); //Split using '/' to separate dimensions of array and different rows
+        Debug.Log(mapa);
+        Debug.Log(level);
+
+        string[] d = map[0].Split('-'); //Split first row to know dimensions of array
         rows = Int32.Parse(d[0]);
+        columns = Int32.Parse(d[1]);
 
 
 
-        for (int y = 1; y < rows + 1; y++)
+
+        for (int y = 1; y < rows + 1; y++) //Pass throigh all available tiles in array and assign respective sprite
         {
             int m = rows - y;
             string line = map[y];
             string[] p = line.Split('-');
             for (int x = 0; x < columns; x++)
             {
-
                 switch (p[x])
                 {
                     case "i":
@@ -363,7 +270,7 @@ public class BoardManager : MonoBehaviour
                         Instantiate(chair, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "R":
                         Instantiate(cashRegister, new Vector3(x, m, 0f), Quaternion.identity); break;
-		            case "W":
+                    case "W":
                         Instantiate(wall2, new Vector3(x, m, 0f), Quaternion.identity); break;
                     case "O":
                         Instantiate(computer, new Vector3(x, m, 0f), Quaternion.identity); break;
@@ -428,19 +335,20 @@ public class BoardManager : MonoBehaviour
                 }
             }
         }
-        if (level=="lake")
+        if (level == "lake") //When is lake create turtles
             LayoutObjectAtRandom(turtle, 1, 5);
-        else if (level=="canteen")
+        else if (level == "canteen") //When is canteen create shop assistaint
             Instantiate(shop, new Vector3(3, 8, 0f), Quaternion.identity);
-        else if (level=="office"){
+        else if (level == "office") //When is office create different teachers for know subject pass
+        {
             Instantiate(Cal, new Vector3(1, 3, 0f), Quaternion.identity);
             Instantiate(Ele, new Vector3(7, 3, 0f), Quaternion.identity);
             Instantiate(Com, new Vector3(13, 3, 0f), Quaternion.identity);
             Instantiate(Oesc, new Vector3(1, 10, 0f), Quaternion.identity);
             Instantiate(Dsa, new Vector3(7, 10, 0f), Quaternion.identity);
-            Instantiate(Aero, new Vector3(13,10, 0f), Quaternion.identity);
+            Instantiate(Aero, new Vector3(13, 10, 0f), Quaternion.identity);
             Instantiate(Tfg, new Vector3(8, 5, 0f), Quaternion.identity);
         }
-        LayoutObjectAtRandom(Students, 3, 6);
+        LayoutObjectAtRandom(Students, 3, 6); //3 to 6 random students always
     }
 }
