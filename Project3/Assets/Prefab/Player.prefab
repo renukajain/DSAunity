@@ -128,7 +128,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &3735490904713265373
 Rigidbody2D:
@@ -167,5 +167,34 @@ MonoBehaviour:
   blockingLayer:
     serializedVersion: 2
     m_Bits: 256
-  collider: {fileID: 0}
+  dialogueTime: 3
+  scoreText: {fileID: 0}
+  scorePannel: {fileID: 0}
+  imageDialogue: {fileID: 0}
+  Dialogue: {fileID: 0}
+  LevelImageText: {fileID: 0}
+  LevelImage: {fileID: 0}
+  ShopPanel: {fileID: 0}
+  Button: {fileID: 0}
   restartLevelDelay: 1
+  turtle: 0
+  coffee: 0
+  redBull: 0
+  pills: 0
+  calculator: 0
+  rule: 0
+  compass: 0
+  pencil: 0
+  glasses: 0
+  usb: 0
+  book: 0
+  puzzle: 0
+  cheat: 0
+  coins: 0
+  cal: 0
+  ele: 0
+  com: 0
+  oes: 0
+  dsa: 0
+  aero: 0
+  tfg: 0

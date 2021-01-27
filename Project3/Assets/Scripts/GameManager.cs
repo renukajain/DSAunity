@@ -9,27 +9,7 @@ public class GameManager : MonoBehaviour
     public float levelStartDelay = 2f;
 
 
-    /*public int turtle;
-    public int coffee;
-    public int redBull;
-    public int pills;
-    public int calculator;
-    public int rule;
-    public int compass;
-    public int pencil;
-    public int glasses;
-    public int usb;
-    public int book;
-    public int puzzle;
-    public int cheat;
-
-    public bool cal = false;
-    public bool ele = false;
-    public bool com = false;
-    public bool oes = false;
-    public bool dsa = false;
-    public bool aero = false;
-    public bool tfg = false;*/
+    //public Player player;
 
     public static Inventory lastinventory = null;
     public static Inventory instanceinv;
@@ -120,23 +100,24 @@ public class GameManager : MonoBehaviour
                 + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4/"
                 + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no/"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no/"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no/"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no/"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no/"
                 + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no/";
 
-            string canteen = "10-18/"
-                + "w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w/"
-                + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C/"
-                + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C/"
-                + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C/"
-                + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&/"
-                + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(/"
-                + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C/"
-                + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C/"
-                + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C/"
-                + "C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C/";
+            string canteen = "11-20/"
+                + "W-w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w-W/"
+                + "W-C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C-W/"
+                + "W-C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C-W/"
+                + "W-C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C-W/"
+                + "W-C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&-W/"
+                + "W-C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(-W/"
+                + "W-C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C-W/"
+                + "W-C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C-W/"
+                + "W-C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C-W/"
+                + "W-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W/"
+                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-ed-W-W/";
 
             string office = "12-19/"
                 + "W-K-L-Ñ-w-w-w-K-L-Ñ-w-w-w-K-L-Ñ-w-w-W/"
@@ -152,33 +133,38 @@ public class GameManager : MonoBehaviour
                 + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W/"
                 + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W/";
 
-            string lake = "10-18/"
-                + "ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f/"
-                + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f/"
-                + "f-g-i-o-o-o-o-o-o-o-o-o-o-o-o-p-g-f/"
-                + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f/"
-                + "f-g-k-l-l-l-z-l-l-l-l-l-z-l-l-n-g-f/"
-                + "f-g-k-l-l-l-l-l-l-z-l-l-l-l-l-n-g-f/"
-                + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f/"
-                + "f-g-x-c-c-c-c-c-c-c-c-c-c-c-c-v-g-f/"
-                + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f/"
-                + "f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f/";
+            string lake = "12-20/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/"
+                + "gw-ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-gw/"
+                + "gw-f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f-gw/"
+                + "gw-f-g-i-o-o-o-o-o-o-o-o-o-o-o-o-p-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-z-l-l-l-l-l-z-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-z-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-x-c-c-c-c-c-c-c-c-c-c-c-c-v-g-f-gw/"
+                + "gw-f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f-gw/"
+                + "gw-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-gw/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/";
 
-            string campus = "14-18/"
-                + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g/"
-                + "g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g/"
-                + "g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g/"
-                + "g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g/"
-                + "g-f-g-e-1-1-f-f-f-f-g-g-g-g-g-g-g-g/"
-                + "g-f-g-1-1-1-f-f-f-f-g-g-i-o-p-g-g-g/"
-                + "g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g/"
-                + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g/";
+            string campus = "16-20/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/"
+                + "gw-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g-gw/"
+                + "gw-g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g-gw/"
+                + "gw-g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g-gw/"
+                + "gw-g-f-g-e-no-no-f-f-f-f-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-g-no-no-no-f-f-f-f-g-g-i-o-p-g-g-g-gw/"
+                + "gw-g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g-gw/"
+                + "gw-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-gw/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/";
+
 
 
             //AndroidJavaClass javaClass = new AndroidJavaClass("edu.upc.androidapp.UnityAPI");
@@ -188,25 +174,39 @@ public class GameManager : MonoBehaviour
             {
                 case "1":
                     vectorlevel = campus;
-                    levelname = "campus"; break;
+                    levelname = "campus"; 
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
                 case "2":
                     vectorlevel = resa; 
-                    levelname = "resa"; break;
+                    levelname = "resa"; 
+                    //player.transform.position= new Vector3(1f,9f,0f);
+                    break;
                 case "3":
                     vectorlevel = canteen;
-                    levelname = "canteen"; break;
+                    levelname = "canteen";
+                    //player.transform.position= new Vector3(17f,3f,0f);
+                    break;
                 case "4":
                     vectorlevel = office;
-                    levelname = "office"; break;
+                    levelname = "office";
+                    //player.transform.position= new Vector3(2f,5f,0f);
+                    break;
                 case "5":
                     vectorlevel = lake;
-                    levelname = "lake"; break;
+                    levelname = "lake";
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
                 case "6":
                     vectorlevel = eetac;
-                    levelname = "eetac"; break;
+                    levelname = "eetac"; 
+                    //player.transform.position= new Vector3(1f,9f,0f);
+                    break;
                 default:
                     vectorlevel = campus;
-                    levelname = "campus"; break;
+                    levelname = "campus";
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
             }
             boardScript.SetupScene(vectorlevel,levelname);
             LevelImage.gameObject.SetActive(false);
@@ -237,23 +237,24 @@ public class GameManager : MonoBehaviour
                 + "e1-ed-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-e7-e8-e8-e8-e9-W-f-f-W-W-W-W-W-W-ed-e4/"
                 + "no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-W-f-f-w-f-f-f-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-W-f-f-f-f-f-f-f-W-no-no-no-no-no-no-no/"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no/"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no/"
-                + "no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-W-f-f-W-f-t2-t4-f-W-no-no-no-no-no-no-no/"
+                + "no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-W-f-f-W-f-2-4-f-W-no-no-no-no-no-no-no/"
                 + "no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-W-f-f-W-f-f-f-f-W-no-no-no-no-no-no-no/"
                 + "no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-e1-e2-e3-e7-e8-e8-e8-e9-e4-no-no-no-no-no-no-no/";
 
-            string canteen = "10-18/"
-                + "w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w/"
-                + "C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C/"
-                + "C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C/"
-                + "C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C/"
-                + "C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&/"
-                + "C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(/"
-                + "C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C/"
-                + "C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C/"
-                + "C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C/"
-                + "C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-ed-C/";
+            string canteen = "11-20/"
+                + "W-w-w-w-w-w-w-w-w-w-w-@-w-w-5-7-5-7-w-W/"
+                + "W-C-1-3-s-C-1-3-s-C-C-R-C-C-6-8-6-8-C-W/"
+                + "W-C-2-4-s-C-2-4-s-C-S-#-C-C-C-C-C-C-C-W/"
+                + "W-C-s-s-C-C-s-s-C-C-C-R-C-C-C-C-C-C-C-W/"
+                + "W-C-C-C-C-C-C-C-C-C-S-%-&-&-&-&-&-&-&-W/"
+                + "W-C-C-C-C-C-C-C-C-C-S-~-(-(-(-(-(-(-(-W/"
+                + "W-C-1-3-s-C-1-3-s-C-C-C-C-C-C-C-C-C-C-W/"
+                + "W-C-2-4-s-C-2-4-s-C-2-4-C-C-C-C-C-C-C-W/"
+                + "W-C-s-s-C-C-s-s-C-C-s-s-C-C-C-C-C-C-C-W/"
+                + "W-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-C-W/"
+                + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-ed-W-W/";
 
             string office = "12-19/"
                 + "W-K-L-Ñ-w-w-w-K-L-Ñ-w-w-w-K-L-Ñ-w-w-W/"
@@ -269,57 +270,75 @@ public class GameManager : MonoBehaviour
                 + "W-C-s-s-C-C-W-C-s-s-C-C-W-C-s-s-C-C-W/"
                 + "W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W-W/";
 
-            string lake = "10-18/"
-                + "ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f/"
-                + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f/"
-                + "f-g-i-o-o-o-o-o-o-o-o-o-o-o-o-p-g-f/"
-                + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f/"
-                + "f-g-k-l-l-l-z-l-l-l-l-l-z-l-l-n-g-f/"
-                + "f-g-k-l-l-l-l-l-l-z-l-l-l-l-l-n-g-f/"
-                + "f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f/"
-                + "f-g-x-c-c-c-c-c-c-c-c-c-c-c-c-v-g-f/"
-                + "f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f/"
-                + "f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f/";
+            string lake = "12-20/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/"
+                + "gw-ed-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-gw/"
+                + "gw-f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f-gw/"
+                + "gw-f-g-i-o-o-o-o-o-o-o-o-o-o-o-o-p-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-z-l-l-l-l-l-z-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-z-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-k-l-l-l-l-l-l-l-l-l-l-l-l-n-g-f-gw/"
+                + "gw-f-g-x-c-c-c-c-c-c-c-c-c-c-c-c-v-g-f-gw/"
+                + "gw-f-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-f-gw/"
+                + "gw-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-gw/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/";
 
-            string campus = "14-18/"
-                + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g/"
-                + "g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g/"
-                + "g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g/"
-                + "g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g/"
-                + "g-f-g-e-1-1-f-f-f-f-g-g-g-g-g-g-g-g/"
-                + "g-f-g-1-1-1-f-f-f-f-g-g-i-o-p-g-g-g/"
-                + "g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g/"
-                + "g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g/"
-                + "g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g/"
-                + "g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g/";
+            string campus = "16-20/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/"
+                + "gw-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-q-no-f-f-f-f-f-f-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-no-no-f-f-f-f-f-f-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g-gw/"
+                + "gw-g-f-g-u-no-no-f-f-f-f-f-f-r-no-g-g-f-g-gw/"
+                + "gw-g-f-g-no-no-no-f-f-f-f-f-f-no-no-g-g-f-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-g-g-g-g-f-g-gw/"
+                + "gw-g-f-g-e-no-no-f-f-f-f-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-g-no-no-no-f-f-f-f-g-g-i-o-p-g-g-g-gw/"
+                + "gw-g-f-g-g-g-g-f-f-f-f-g-g-k-lk-n-g-g-g-gw/"
+                + "gw-g-f-g-g-g-g-g-g-f-f-g-g-x-c-v-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-f-g-g-g-g-g-g-g-g-gw/"
+                + "gw-g-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-f-g-gw/"
+                + "gw-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-g-gw/"
+                + "gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw-gw/";
 
             switch (level)
             {
                 case "1":
                     vectorlevel = campus;
-                    levelname = "campus"; break;
+                    levelname = "campus"; 
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
                 case "2":
                     vectorlevel = resa; 
-                    levelname = "resa"; break;
+                    levelname = "resa"; 
+                    //player.transform.position= new Vector3(1f,9f,0f);
+                    break;
                 case "3":
                     vectorlevel = canteen;
-                    levelname = "canteen"; break;
+                    levelname = "canteen";
+                    //player.transform.position= new Vector3(17f,3f,0f);
+                    break;
                 case "4":
                     vectorlevel = office;
-                    levelname = "office"; break;
+                    levelname = "office";
+                    //player.transform.position= new Vector3(2f,5f,0f);
+                    break;
                 case "5":
                     vectorlevel = lake;
-                    levelname = "lake"; break;
+                    levelname = "lake";
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
                 case "6":
                     vectorlevel = eetac;
-                    levelname = "eetac"; break;
+                    levelname = "eetac"; 
+                    //player.transform.position= new Vector3(1f,9f,0f);
+                    break;
                 default:
                     vectorlevel = campus;
-                    levelname = "campus"; break;
+                    levelname = "campus";
+                    //player.transform.position= new Vector3(1f,1f,0f);
+                    break;
             }
             boardScript.SetupScene(vectorlevel,levelname);
             LevelImage.gameObject.SetActive(false);

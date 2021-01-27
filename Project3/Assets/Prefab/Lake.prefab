@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6957897839202933878}
   - component: {fileID: 724385090701738221}
   - component: {fileID: 9113980182781382879}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Lake
   m_TagString: Lake
   m_Icon: {fileID: 0}
@@ -107,5 +107,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 2.8, y: 2.8}
   m_EdgeRadius: 0

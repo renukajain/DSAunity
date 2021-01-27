@@ -25,6 +25,8 @@ public class BoardManager : MonoBehaviour
 
     public Count foodCount = new Count(10, 20);
 
+    public Player player;
+
     public GameObject[] turtle;
     public GameObject residence; //r
     public GameObject cofeeBuilding; //q
@@ -98,7 +100,6 @@ public class BoardManager : MonoBehaviour
     public GameObject Aero;
     public GameObject Tfg;
     public GameObject Black;
-
 
 
     private GameObject mainCamera;
@@ -334,12 +335,19 @@ public class BoardManager : MonoBehaviour
                 }
             }
         }
-        if (level == "lake") //When is lake create turtles
+        if (level == "lake")
+        { //When is lake create turtles
             LayoutObjectAtRandom(turtle, 1, 5);
-        else if (level == "canteen") //When is canteen create shop assistaint
+            //player.transform.position = new Vector3(1f, 1f, 0f);
+        }
+        else if (level == "canteen")
+        { //When is canteen create shop assistaint
             Instantiate(shop, new Vector3(3, 8, 0f), Quaternion.identity);
+            //player.transform.position = new Vector3(17f, 3f, 0f);
+        }
         else if (level == "office") //When is office create different teachers for know subject pass
         {
+            //player.transform.position = new Vector3(2f, 5f, 0f);
             Instantiate(Cal, new Vector3(1, 3, 0f), Quaternion.identity);
             Instantiate(Ele, new Vector3(7, 3, 0f), Quaternion.identity);
             Instantiate(Com, new Vector3(13, 3, 0f), Quaternion.identity);
@@ -347,7 +355,20 @@ public class BoardManager : MonoBehaviour
             Instantiate(Dsa, new Vector3(7, 10, 0f), Quaternion.identity);
             Instantiate(Aero, new Vector3(13, 10, 0f), Quaternion.identity);
             Instantiate(Tfg, new Vector3(8, 5, 0f), Quaternion.identity);
+        }/*
+        else if (level == "campus")
+        {
+            player.transform.position = new Vector3(1f, 1f, 0f);
         }
+        else if (level == "resa")
+        {
+            player.transform.position = new Vector3(1f, 9f, 0f);
+        }
+        else if (level == "eetac")
+        {
+            player.transform.position = new Vector3(1f, 9f, 0f);
+        }*/
+
         LayoutObjectAtRandom(Students, 3, 6); //3 to 6 random students always
     }
 }

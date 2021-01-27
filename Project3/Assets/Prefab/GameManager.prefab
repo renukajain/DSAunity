@@ -47,6 +47,7 @@ MonoBehaviour:
   foodCount:
     minimum: 20
     maximum: 10
+  player: {fileID: 638137299629913897, guid: 96cf0f0a717d87147a495147cbf2767a, type: 3}
   turtle:
   - {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
   - {fileID: 667660774501494415, guid: ccb41e0c8e499444b9df868e9b64f54c, type: 3}
@@ -175,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelStartDelay: 0
+  player: {fileID: 0}
   vectorlevel: 
   levelname: campus
   level: 
@@ -183,16 +185,3 @@ MonoBehaviour:
   LevelImageText: {fileID: 7453161792197049656, guid: a5af7122815204d4982863f3e7a6fe60,
     type: 3}
   playersTurn: 1
-  Text0: {fileID: 0}
-  Text1: {fileID: 0}
-  Text2: {fileID: 0}
-  Text3: {fileID: 0}
-  Text4: {fileID: 0}
-  Text5: {fileID: 0}
-  Text6: {fileID: 0}
-  Text7: {fileID: 0}
-  Text8: {fileID: 0}
-  Text9: {fileID: 0}
-  Text10: {fileID: 0}
-  Text11: {fileID: 0}
-  Text12: {fileID: 0}
